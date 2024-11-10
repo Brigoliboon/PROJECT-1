@@ -1,0 +1,2641 @@
+[
+  {
+    "title": "Shape of You",
+    "singer": "Ed Sheeran",
+    "year": 2017,
+    "description": "A catchy pop song about attraction and romance.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Blinding Lights",
+    "singer": "The Weeknd",
+    "year": 2019,
+    "description": "An upbeat synth-pop track about love and desire.",
+    "tags": ["pop", "electronic", "dance"]
+  },
+  {
+    "title": "Rolling in the Deep",
+    "singer": "Adele",
+    "year": 2010,
+    "description": "A powerful anthem about heartbreak and resilience.",
+    "tags": ["pop", "soul", "emotional"]
+  },
+  {
+    "title": "Despacito",
+    "singer": "Luis Fonsi ft. Daddy Yankee",
+    "year": 2017,
+    "description": "A global hit celebrating sensual romance.",
+    "tags": ["pop", "reggaeton", "dance"]
+  },
+  {
+    "title": "Someone Like You",
+    "singer": "Adele",
+    "year": 2011,
+    "description": "A heartfelt ballad about lost love and acceptance.",
+    "tags": ["pop", "soul", "emotional"]
+  },
+  {
+    "title": "Uptown Funk",
+    "singer": "Mark Ronson ft. Bruno Mars",
+    "year": 2014,
+    "description": "A high-energy funk-pop anthem perfect for dancing.",
+    "tags": ["pop", "funk", "dance"]
+  },
+  {
+    "title": "Get Lucky",
+    "singer": "Daft Punk ft. Pharrell Williams",
+    "year": 2013,
+    "description": "A funky dance track about love and good times.",
+    "tags": ["electronic", "funk", "dance"]
+  },
+  {
+    "title": "Stay with Me",
+    "singer": "Sam Smith",
+    "year": 2014,
+    "description": "A soulful ballad about longing and connection.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Shake It Off",
+    "singer": "Taylor Swift",
+    "year": 2014,
+    "description": "An upbeat anthem about ignoring negativity and enjoying life.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Thinking Out Loud",
+    "singer": "Ed Sheeran",
+    "year": 2014,
+    "description": "A romantic ballad about enduring love.",
+    "tags": ["pop", "romantic", "R&B"]
+  },
+  {
+    "title": "All About That Bass",
+    "singer": "Meghan Trainor",
+    "year": 2014,
+    "description": "A fun pop song promoting body positivity.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Roar",
+    "singer": "Katy Perry",
+    "year": 2013,
+    "description": "An empowering anthem about self-confidence and strength.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Bad Guy",
+    "singer": "Billie Eilish",
+    "year": 2019,
+    "description": "A catchy pop song with a dark twist about self-identity.",
+    "tags": ["pop", "alternative", "edgy"]
+  },
+  {
+    "title": "Havana",
+    "singer": "Camila Cabello",
+    "year": 2017,
+    "description": "A Latin-pop hit about love and nostalgia.",
+    "tags": ["pop", "Latin", "dance"]
+  },
+  {
+    "title": "Shallow",
+    "singer": "Lady Gaga & Bradley Cooper",
+    "year": 2018,
+    "description": "A powerful duet about vulnerability and love.",
+    "tags": ["pop", "soundtrack", "romantic"]
+  },
+  {
+    "title": "Dance Monkey",
+    "singer": "Tones and I",
+    "year": 2019,
+    "description": "A catchy pop song about the pressures of performance.",
+    "tags": ["pop", "dance", "viral"]
+  },
+  {
+    "title": "Levitating",
+    "singer": "Dua Lipa",
+    "year": 2020,
+    "description": "An upbeat disco-inspired track about love and fun.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Good 4 U",
+    "singer": "Olivia Rodrigo",
+    "year": 2021,
+    "description": "A pop-punk anthem about heartbreak and anger.",
+    "tags": ["pop", "rock", "emotional"]
+  },
+  {
+    "title": "Watermelon Sugar",
+    "singer": "Harry Styles",
+    "year": 2019,
+    "description": "A summery pop song celebrating love and joy.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Peaches",
+    "singer": "Justin Bieber ft. Daniel Caesar & Giveon",
+    "year": 2021,
+    "description": "A laid-back R&B track about love and relaxation.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "Montero (Call Me By Your Name)",
+    "singer": "Lil Nas X",
+    "year": 2021,
+    "description": "A bold anthem about self-acceptance and identity.",
+    "tags": ["hip-hop", "pop", "empowerment"]
+  },
+  {
+    "title": "Say So",
+    "singer": "Doja Cat",
+    "year": 2019,
+    "description": "A funky pop track about love and attraction.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Butter",
+    "singer": "BTS",
+    "year": 2021,
+    "description": "A smooth pop song celebrating love and confidence.",
+    "tags": ["pop", "K-pop", "dance"]
+  },
+  {
+    "title": "Stay",
+    "singer": "The Kid LAROI & Justin Bieber",
+    "year": 2021,
+    "description": "A catchy pop ballad about longing and regret.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Finesse",
+    "singer": "Bruno Mars ft. Cardi B",
+    "year": 2018,
+    "description": "A fun throwback track celebrating love and style.",
+    "tags": ["pop", "R&B", "dance"]
+  },
+  {
+    "title": "Sucker",
+    "singer": "Jonas Brothers",
+    "year": 2019,
+    "description": "A catchy pop song about being in love.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Old Town Road",
+    "singer": "Lil Nas X ft. Billy Ray Cyrus",
+    "year": 2019,
+    "description": "A genre-blending hit about country living and ambition.",
+    "tags": ["country", "rap", "viral"]
+  },
+  {
+    "title": "Take Me to Church",
+    "singer": "Hozier",
+    "year": 2013,
+    "description": "A powerful song addressing love and societal issues.",
+    "tags": ["indie", "soul", "emotional"]
+  },
+  {
+    "title": "Fight Song",
+    "singer": "Rachel Platten",
+    "year": 2015,
+    "description": "An empowering anthem about resilience and strength.",
+    "tags": ["pop", "empowerment", "motivational"]
+  },
+  {
+    "title": "Rise Up",
+    "singer": "Andra Day",
+    "year": 2015,
+    "description": "A soulful anthem about perseverance and hope.",
+    "tags": ["R&B", "soul", "inspirational"]
+  },
+  {
+    "title": "Ain't It Fun",
+    "singer": "Paramore",
+    "year": 2013,
+    "description": "An empowering anthem about growing up and facing challenges.",
+    "tags": ["rock", "pop", "empowerment"]
+  },
+  {
+    "title": "Perfect",
+    "singer": "Ed Sheeran",
+    "year": 2017,
+    "description": "A romantic ballad celebrating true love.",
+    "tags": ["pop", "romantic", "ballad"]
+  },
+  {
+    "title": "I Will Always Love You",
+    "singer": "Whitney Houston",
+    "year": 1992,
+    "description": "A powerful ballad about love and letting go.",
+    "tags": ["pop", "ballad", "emotional"]
+  },
+  {
+    "title": "Thinking of You",
+    "singer": "Katy Perry",
+    "year": 2008,
+    "description": "A heartfelt ballad about longing and love.",
+    "tags": ["pop", "romantic", "emotional"]
+  },
+  {
+    "title": "No Tears Left to Cry",
+    "singer": "Ariana Grande",
+    "year": 2018,
+    "description": "An upbeat pop song about moving forward and positivity.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Hey Ya!",
+    "singer": "OutKast",
+    "year": 2003,
+    "description": "An infectious blend of pop and hip-hop celebrating love and relationships.",
+    "tags": ["pop", "hip-hop", "dance"]
+  },
+  {
+    "title": "Love Yourself",
+    "singer": "Justin Bieber",
+    "year": 2015,
+    "description": "A pop song about self-respect and moving on.",
+    "tags": ["pop", "R&B", "empowerment"]
+  },
+  {
+    "title": "Royals",
+    "singer": "Lorde",
+    "year": 2013,
+    "description": "A minimalist pop anthem about rejecting materialism.",
+    "tags": ["pop", "alternative", "emotional"]
+  },
+  {
+    "title": "Titanium",
+    "singer": "David Guetta ft. Sia",
+    "year": 2011,
+    "description": "An empowering anthem about resilience and strength.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Don't Start Now",
+    "singer": "Dua Lipa",
+    "year": 2019,
+    "description": "A disco-inspired track about moving on and self-confidence.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Lose You to Love Me",
+    "singer": "Selena Gomez",
+    "year": 2019,
+    "description": "A heartfelt ballad about personal growth and self-love.",
+    "tags": ["pop", "emotional", "romantic"]
+  },
+  {
+    "title": "Dancing with a Stranger",
+    "singer": "Sam Smith & Normani",
+    "year": 2019,
+    "description": "A sultry pop duet about longing and connection.",
+    "tags": ["pop", "R&B", "romantic"]
+  },
+  {
+    "title": "Call Me Maybe",
+    "singer": "Carly Rae Jepsen",
+    "year": 2011,
+    "description": "A catchy pop song about infatuation and love at first sight.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Take Me Home, Country Roads",
+    "singer": "John Denver",
+    "year": 1971,
+    "description": "A nostalgic song about longing for home and nature.",
+    "tags": ["country", "folk", "classic"]
+  },
+  {
+    "title": "American Pie",
+    "singer": "Don McLean",
+    "year": 1971,
+    "description": "A folk rock classic reflecting on American culture and loss.",
+    "tags": ["folk", "classic", "nostalgic"]
+  },
+  {
+    "title": "Somebody to Love",
+    "singer": "Jefferson Airplane",
+    "year": 1967,
+    "description": "A psychedelic rock anthem about longing and desire.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "I Want to Break Free",
+    "singer": "Queen",
+    "year": 1984,
+    "description": "A rock anthem about freedom and self-liberation.",
+    "tags": ["rock", "classic", "empowerment"]
+  },
+  {
+    "title": "Take It Easy",
+    "singer": "Eagles",
+    "year": 1972,
+    "description": "A classic rock song about enjoying life and taking things lightly.",
+    "tags": ["rock", "classic", "laid-back"]
+  },
+  {
+    "title": "You Make My Dreams",
+    "singer": "Hall & Oates",
+    "year": 1980,
+    "description": "An upbeat pop song celebrating love and happiness.",
+    "tags": ["pop", "classic", "happy"]
+  },
+  {
+    "title": "Sweet Caroline",
+    "singer": "Neil Diamond",
+    "year": 1969,
+    "description": "A feel-good classic about love and nostalgia.",
+    "tags": ["pop", "classic", "happy"]
+  },
+  {
+    "title": "Summer of '69",
+    "singer": "Bryan Adams",
+    "year": 1984,
+    "description": "A nostalgic rock anthem about youth and summer memories.",
+    "tags": ["rock", "classic", "nostalgic"]
+  },
+  {
+    "title": "Girls Just Want to Have Fun",
+    "singer": "Cyndi Lauper",
+    "year": 1983,
+    "description": "A feminist anthem celebrating female empowerment and fun.",
+    "tags": ["pop", "classic", "empowerment"]
+  },
+  {
+    "title": "I Will Survive",
+    "singer": "Gloria Gaynor",
+    "year": 1978,
+    "description": "An empowering disco anthem about resilience and independence.",
+    "tags": ["disco", "classic", "empowerment"]
+  },
+  {
+    "title": "Livin' on a Prayer",
+    "singer": "Bon Jovi",
+    "year": 1986,
+    "description": "A rock anthem about hope and perseverance.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Dancing Queen",
+    "singer": "ABBA",
+    "year": 1976,
+    "description": "A disco classic celebrating youth and joy.",
+    "tags": ["disco", "pop", "happy"]
+  },
+  {
+    "title": "Respect",
+    "singer": "Aretha Franklin",
+    "year": 1967,
+    "description": "A powerful anthem demanding respect and equality.",
+    "tags": ["soul", "classic", "empowerment"]
+  },
+  {
+    "title": "With or Without You",
+    "singer": "U2",
+    "year": 1987,
+    "description": "A rock ballad about love and longing.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Every Breath You Take",
+    "singer": "The Police",
+    "year": 1983,
+    "description": "A haunting rock ballad about love and obsession.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Born to Run",
+    "singer": "Bruce Springsteen",
+    "year": 1975,
+    "description": "An iconic rock song about escaping and chasing dreams.",
+    "tags": ["rock", "classic", "inspirational"]
+  },
+  {
+    "title": "I Want to Hold Your Hand",
+    "singer": "The Beatles",
+    "year": 1963,
+    "description": "An upbeat song about young love and excitement.",
+    "tags": ["rock", "classic", "happy"]
+  },
+  {
+    "title": "Jolene",
+    "singer": "Dolly Parton",
+    "year": 1973,
+    "description": "A poignant country song about jealousy and despair.",
+    "tags": ["country", "classic", "emotional"]
+  },
+  {
+    "title": "Crazy",
+    "singer": "Patsy Cline",
+    "year": 1961,
+    "description": "A classic country ballad about heartbreak and longing.",
+    "tags": ["country", "classic", "emotional"]
+  },
+  {
+    "title": "Imagine",
+    "singer": "John Lennon",
+    "year": 1971,
+    "description": "A timeless anthem for peace and unity.",
+    "tags": ["rock", "classic", "inspirational"]
+  },
+  {
+    "title": "My Girl",
+    "singer": "The Temptations",
+    "year": 1964,
+    "description": "A classic Motown hit celebrating love and joy.",
+    "tags": ["R&B", "classic", "happy"]
+  },
+  {
+    "title": "What a Wonderful World",
+    "singer": "Louis Armstrong",
+    "year": 1967,
+    "description": "A beautiful song about appreciating life and nature.",
+    "tags": ["jazz", "classic", "inspirational"]
+  },
+  {
+    "title": "Stand by Me",
+    "singer": "Ben E. King",
+    "year": 1961,
+    "description": "A soulful anthem about loyalty and friendship.",
+    "tags": ["soul", "classic", "emotional"]
+  },
+  {
+    "title": "You Are the Sunshine of My Life",
+    "singer": "Stevie Wonder",
+    "year": 1973,
+    "description": "A joyful love song celebrating affection and warmth.",
+    "tags": ["soul", "classic", "romantic"]
+  },
+  {
+    "title": "Ain't No Mountain High Enough",
+    "singer": "Marvin Gaye & Tammi Terrell",
+    "year": 1967,
+    "description": "A classic duet about unwavering love and support.",
+    "tags": ["soul", "classic", "romantic"]
+  },
+  {
+    "title": "Don't Stop Believin'",
+    "singer": "Journey",
+    "year": 1981,
+    "description": "A rock anthem about hope and perseverance.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Kiss From a Rose",
+    "singer": "Seal",
+    "year": 1994,
+    "description": "A soulful ballad about love and mystery.",
+    "tags": ["pop", "R&B", "romantic"]
+  },
+  {
+    "title": "You Can't Hurry Love",
+    "singer": "The Supremes",
+    "year": 1966,
+    "description": "A Motown classic about patience in love.",
+    "tags": ["R&B", "classic", "happy"]
+  },
+  {
+    "title": "Higher Love",
+    "singer": "Steve Winwood",
+    "year": 1986,
+    "description": "A soulful rock song about seeking love and connection.",
+    "tags": ["rock", "classic", "inspirational"]
+  },
+  {
+    "title": "Take a Bow",
+    "singer": "Rihanna",
+    "year": 2008,
+    "description": "A pop ballad about betrayal and self-respect.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Rude",
+    "singer": "MAGIC!",
+    "year": 2013,
+    "description": "A reggae-pop song about love and asking for approval.",
+    "tags": ["pop", "reggae", "happy"]
+  },
+  {
+    "title": "I Gotta Feeling",
+    "singer": "The Black Eyed Peas",
+    "year": 2009,
+    "description": "An upbeat party anthem celebrating good times and fun.",
+    "tags": ["pop", "dance", "party"]
+  },
+  {
+    "title": "Clocks",
+    "singer": "Coldplay",
+    "year": 2002,
+    "description": "A reflective rock song about time and existence.",
+    "tags": ["rock", "alternative", "emotional"]
+  },
+  {
+    "title": "Halo",
+    "singer": "Beyonc\u00c3\u00a9",
+    "year": 2008,
+    "description": "A powerful ballad about love and admiration.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "Bleeding Love",
+    "singer": "Leona Lewis",
+    "year": 2007,
+    "description": "A powerful ballad about love and heartache.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Umbrella",
+    "singer": "Rihanna ft. Jay-Z",
+    "year": 2007,
+    "description": "A pop-R&B anthem about support and friendship.",
+    "tags": ["pop", "R&B", "dance"]
+  },
+  {
+    "title": "Chasing Cars",
+    "singer": "Snow Patrol",
+    "year": 2006,
+    "description": "A heartfelt rock ballad about love and connection.",
+    "tags": ["rock", "alternative", "emotional"]
+  },
+  {
+    "title": "Wonderwall",
+    "singer": "Oasis",
+    "year": 1995,
+    "description": "A Britpop classic about longing and hope.",
+    "tags": ["rock", "90s", "emotional"]
+  },
+  {
+    "title": "Hey Jude",
+    "singer": "The Beatles",
+    "year": 1968,
+    "description": "A comforting anthem about overcoming difficulties.",
+    "tags": ["rock", "classic", "inspirational"]
+  },
+  {
+    "title": "Zombie",
+    "singer": "The Cranberries",
+    "year": 1994,
+    "description": "A haunting rock song addressing conflict and loss.",
+    "tags": ["rock", "90s", "political"]
+  },
+  {
+    "title": "You Shook Me All Night Long",
+    "singer": "AC/DC",
+    "year": 1980,
+    "description": "A classic rock anthem about love and excitement.",
+    "tags": ["rock", "classic", "party"]
+  },
+  {
+    "title": "Don't Stop",
+    "singer": "Fleetwood Mac",
+    "year": 1977,
+    "description": "An uplifting rock song about moving forward and optimism.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Take Good Care of My Baby",
+    "singer": "Bobby Vee",
+    "year": 1961,
+    "description": "A sweet pop song about love and care.",
+    "tags": ["pop", "classic", "romantic"]
+  },
+  {
+    "title": "I Can't Help Myself (Sugar Pie Honey Bunch)",
+    "singer": "Four Tops",
+    "year": 1965,
+    "description": "A Motown classic celebrating love and devotion.",
+    "tags": ["R&B", "classic", "happy"]
+  },
+  {
+    "title": "You Make Me Feel Like a Natural Woman",
+    "singer": "Aretha Franklin",
+    "year": 1967,
+    "description": "A powerful anthem about love and self-worth.",
+    "tags": ["soul", "classic", "empowerment"]
+  },
+  {
+    "title": "Shout",
+    "singer": "The Isley Brothers",
+    "year": 1959,
+    "description": "A high-energy classic that gets everyone dancing.",
+    "tags": ["R&B", "classic", "party"]
+  },
+  {
+    "title": "Ain't Too Proud to Beg",
+    "singer": "The Temptations",
+    "year": 1966,
+    "description": "A soulful plea for love and reconciliation.",
+    "tags": ["R&B", "classic", "emotional"]
+  },
+  {
+    "title": "I Want You Back",
+    "singer": "The Jackson 5",
+    "year": 1969,
+    "description": "A catchy Motown hit about longing for a lost love.",
+    "tags": ["R&B", "classic", "happy"]
+  },
+  {
+    "title": "Twist and Shout",
+    "singer": "The Beatles",
+    "year": 1963,
+    "description": "An energetic rock song perfect for dancing.",
+    "tags": ["rock", "classic", "party"]
+  },
+  {
+    "title": "Ain't No Sunshine",
+    "singer": "Bill Withers",
+    "year": 1971,
+    "description": "A soulful ballad about heartbreak and longing.",
+    "tags": ["soul", "classic", "emotional"]
+  },
+  {
+    "title": "Lean on Me",
+    "singer": "Bill Withers",
+    "year": 1972,
+    "description": "A comforting anthem about friendship and support.",
+    "tags": ["soul", "classic", "inspirational"]
+  },
+  {
+    "title": "What's Going On",
+    "singer": "Marvin Gaye",
+    "year": 1971,
+    "description": "A soulful plea for peace and understanding.",
+    "tags": ["soul", "classic", "political"]
+  },
+  {
+    "title": "Material Girl",
+    "singer": "Madonna",
+    "year": 1984,
+    "description": "A pop anthem about materialism and ambition.",
+    "tags": ["pop", "classic", "empowerment"]
+  },
+  {
+    "title": "Dancing in the Dark",
+    "singer": "Bruce Springsteen",
+    "year": 1984,
+    "description": "A rock song about searching for love and connection.",
+    "tags": ["rock", "classic", "romantic"]
+  },
+  {
+    "title": "Like a Prayer",
+    "singer": "Madonna",
+    "year": 1989,
+    "description": "A controversial anthem blending spirituality and sexuality.",
+    "tags": ["pop", "classic", "edgy"]
+  },
+  {
+    "title": "Kiss",
+    "singer": "Prince",
+    "year": 1986,
+    "description": "A funky pop song about love and seduction.",
+    "tags": ["pop", "funk", "dance"]
+  },
+  {
+    "title": "Tears in Heaven",
+    "singer": "Eric Clapton",
+    "year": 1992,
+    "description": "A poignant ballad about loss and grief.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Radioactive",
+    "singer": "Imagine Dragons",
+    "year": 2012,
+    "description": "An anthemic rock song about change and awakening.",
+    "tags": ["rock", "alternative", "motivational"]
+  },
+  {
+    "title": "Hello",
+    "singer": "Adele",
+    "year": 2015,
+    "description": "A powerful ballad about regret and longing.",
+    "tags": ["pop", "soul", "emotional"]
+  },
+  {
+    "title": "Bad Blood",
+    "singer": "Taylor Swift",
+    "year": 2014,
+    "description": "A pop anthem about betrayal and conflicts in friendship.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Can't Stop the Feeling!",
+    "singer": "Justin Timberlake",
+    "year": 2016,
+    "description": "An upbeat pop song celebrating joy and dancing.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "24K Magic",
+    "singer": "Bruno Mars",
+    "year": 2016,
+    "description": "A funky party anthem celebrating good times and style.",
+    "tags": ["pop", "funk", "dance"]
+  },
+  {
+    "title": "Truth Hurts",
+    "singer": "Lizzo",
+    "year": 2017,
+    "description": "An empowering anthem about self-love and independence.",
+    "tags": ["pop", "R&B", "empowerment"]
+  },
+  {
+    "title": "Thank U, Next",
+    "singer": "Ariana Grande",
+    "year": 2018,
+    "description": "A pop anthem about growth and moving on from relationships.",
+    "tags": ["pop", "R&B", "empowerment"]
+  },
+  {
+    "title": "Savage Love",
+    "singer": "Jawsh 685 & Jason Derulo",
+    "year": 2020,
+    "description": "A catchy pop song about love and attraction.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "drivers license",
+    "singer": "Olivia Rodrigo",
+    "year": 2021,
+    "description": "A heartfelt ballad about heartbreak and longing.",
+    "tags": ["pop", "emotional", "romantic"]
+  },
+  {
+    "title": "Mr. Brightside",
+    "singer": "The Killers",
+    "year": 2003,
+    "description": "A catchy rock song about jealousy and heartbreak.",
+    "tags": ["rock", "indie", "emotional"]
+  },
+  {
+    "title": "The Scientist",
+    "singer": "Coldplay",
+    "year": 2002,
+    "description": "A poignant ballad about love and regret.",
+    "tags": ["rock", "alternative", "emotional"]
+  },
+  {
+    "title": "Boulevard of Broken Dreams",
+    "singer": "Green Day",
+    "year": 2004,
+    "description": "A rock anthem about loneliness and searching for purpose.",
+    "tags": ["rock", "alternative", "emotional"]
+  },
+  {
+    "title": "When I Was Your Man",
+    "singer": "Bruno Mars",
+    "year": 2012,
+    "description": "A soulful ballad about regret and lost love.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Counting Stars",
+    "singer": "OneRepublic",
+    "year": 2013,
+    "description": "An upbeat pop song about pursuing dreams over material wealth.",
+    "tags": ["pop", "rock", "uplifting"]
+  },
+  {
+    "title": "Pompeii",
+    "singer": "Bastille",
+    "year": 2013,
+    "description": "An anthemic indie pop song about resilience and survival.",
+    "tags": ["pop", "indie", "motivational"]
+  },
+  {
+    "title": "All of Me",
+    "singer": "John Legend",
+    "year": 2013,
+    "description": "A romantic ballad dedicated to unconditional love.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "Stay",
+    "singer": "Rihanna ft. Mikky Ekko",
+    "year": 2013,
+    "description": "A poignant ballad about vulnerability and desire.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Cheerleader",
+    "singer": "OMI",
+    "year": 2014,
+    "description": "A feel-good reggae-pop song about love and support.",
+    "tags": ["pop", "reggae", "happy"]
+  },
+  {
+    "title": "Drag Me Down",
+    "singer": "One Direction",
+    "year": 2015,
+    "description": "A confident anthem about resilience and self-empowerment.",
+    "tags": ["pop", "rock", "motivational"]
+  },
+  {
+    "title": "Can't Feel My Face",
+    "singer": "The Weeknd",
+    "year": 2015,
+    "description": "A dance-pop hit about love and attraction.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Love Me Like You Do",
+    "singer": "Ellie Goulding",
+    "year": 2015,
+    "description": "A romantic pop song featured in 'Fifty Shades of Grey.'",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Sorry",
+    "singer": "Justin Bieber",
+    "year": 2015,
+    "description": "A catchy pop song about regret and asking for forgiveness.",
+    "tags": ["pop", "dance", "emotional"]
+  },
+  {
+    "title": "That's What I Like",
+    "singer": "Bruno Mars",
+    "year": 2016,
+    "description": "A smooth R&B track celebrating love and luxury.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "Praying",
+    "singer": "Kesha",
+    "year": 2017,
+    "description": "An empowering anthem about overcoming adversity.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Look What You Made Me Do",
+    "singer": "Taylor Swift",
+    "year": 2017,
+    "description": "A dark pop anthem about revenge and self-empowerment.",
+    "tags": ["pop", "dance", "edgy"]
+  },
+  {
+    "title": "Bad Liar",
+    "singer": "Imagine Dragons",
+    "year": 2017,
+    "description": "A reflective song about deception and honesty.",
+    "tags": ["rock", "alternative", "emotional"]
+  },
+  {
+    "title": "Feel It Still",
+    "singer": "Portugal. The Man",
+    "year": 2017,
+    "description": "An upbeat track with a retro vibe about breaking free.",
+    "tags": ["rock", "indie", "dance"]
+  },
+  {
+    "title": "Sunflower",
+    "singer": "Post Malone & Swae Lee",
+    "year": 2018,
+    "description": "A melodic pop song about love and support.",
+    "tags": ["pop", "hip-hop", "romantic"]
+  },
+  {
+    "title": "Someone You Loved",
+    "singer": "Lewis Capaldi",
+    "year": 2019,
+    "description": "A heartfelt ballad about heartbreak and longing.",
+    "tags": ["pop", "emotional", "romantic"]
+  },
+  {
+    "title": "Hey There Delilah",
+    "singer": "Plain White T's",
+    "year": 2006,
+    "description": "A sweet acoustic song about long-distance love.",
+    "tags": ["pop", "acoustic", "romantic"]
+  },
+  {
+    "title": "Firework",
+    "singer": "Katy Perry",
+    "year": 2010,
+    "description": "An empowering anthem about self-worth and potential.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "We Are Young",
+    "singer": "Fun. ft. Janelle Mon\u00c3\u00a1e",
+    "year": 2011,
+    "description": "An anthem about youth and living in the moment.",
+    "tags": ["pop", "rock", "party"]
+  },
+  {
+    "title": "Say You Won't Let Go",
+    "singer": "James Arthur",
+    "year": 2016,
+    "description": "A romantic ballad about commitment and love.",
+    "tags": ["pop", "R&B", "romantic"]
+  },
+  {
+    "title": "Girls Like You",
+    "singer": "Maroon 5 ft. Cardi B",
+    "year": 2018,
+    "description": "A catchy pop song celebrating love and appreciation.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Dusk Till Dawn",
+    "singer": "Zayn ft. Sia",
+    "year": 2017,
+    "description": "A powerful duet about unconditional love and support.",
+    "tags": ["pop", "R&B", "romantic"]
+  },
+  {
+    "title": "Happier",
+    "singer": "Marshmello ft. Bastille",
+    "year": 2018,
+    "description": "A dance-pop song about longing and moving on.",
+    "tags": ["pop", "dance", "emotional"]
+  },
+  {
+    "title": "Taki Taki",
+    "singer": "DJ Snake ft. Selena Gomez, Ozuna & Cardi B",
+    "year": 2018,
+    "description": "A reggaeton hit that celebrates fun and dance.",
+    "tags": ["pop", "reggaeton", "dance"]
+  },
+  {
+    "title": "Sweet Child o' Mine",
+    "singer": "Guns N' Roses",
+    "year": 1987,
+    "description": "A rock ballad celebrating love and innocence.",
+    "tags": ["rock", "classic", "romantic"]
+  },
+  {
+    "title": "Under Pressure",
+    "singer": "Queen & David Bowie",
+    "year": 1981,
+    "description": "A powerful anthem about the struggles of life and love.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Billie Jean",
+    "singer": "Michael Jackson",
+    "year": 1982,
+    "description": "A classic pop song about love and deceit.",
+    "tags": ["pop", "classic", "dance"]
+  },
+  {
+    "title": "Like a Rolling Stone",
+    "singer": "Bob Dylan",
+    "year": 1965,
+    "description": "An iconic song about change and freedom.",
+    "tags": ["rock", "classic", "poetic"]
+  },
+  {
+    "title": "I Want It That Way",
+    "singer": "Backstreet Boys",
+    "year": 1999,
+    "description": "A pop classic about longing and love.",
+    "tags": ["pop", "90s", "romantic"]
+  },
+  {
+    "title": "Smells Like Teen Spirit",
+    "singer": "Nirvana",
+    "year": 1991,
+    "description": "A grunge anthem that defined a generation.",
+    "tags": ["rock", "90s", "rebellion"]
+  },
+  {
+    "title": "Take on Me",
+    "singer": "a-ha",
+    "year": 1985,
+    "description": "A synth-pop classic known for its catchy melody.",
+    "tags": ["pop", "80s", "dance"]
+  },
+  {
+    "title": "Killing Me Softly",
+    "singer": "Roberta Flack",
+    "year": 1973,
+    "description": "A soulful ballad about profound emotional connection.",
+    "tags": ["R&B", "classic", "emotional"]
+  },
+  {
+    "title": "Another One Bites the Dust",
+    "singer": "Queen",
+    "year": 1980,
+    "description": "A funky rock hit about resilience and survival.",
+    "tags": ["rock", "classic", "party"]
+  },
+  {
+    "title": "Let It Be",
+    "singer": "The Beatles",
+    "year": 1970,
+    "description": "A soothing anthem about finding peace in difficult times.",
+    "tags": ["rock", "classic", "inspirational"]
+  },
+  {
+    "title": "Shout!",
+    "singer": "The Isley Brothers",
+    "year": 1959,
+    "description": "A high-energy classic that gets everyone dancing.",
+    "tags": ["R&B", "classic", "party"]
+  },
+  {
+    "title": "I Will Always Love You",
+    "singer": "Dolly Parton",
+    "year": 1973,
+    "description": "A powerful ballad about love and letting go.",
+    "tags": ["country", "classic", "emotional"]
+  },
+  {
+    "title": "Jailhouse Rock",
+    "singer": "Elvis Presley",
+    "year": 1957,
+    "description": "A rock and roll classic that showcases Elvis's charisma.",
+    "tags": ["rock", "classic", "party"]
+  },
+  {
+    "title": "Good Vibrations",
+    "singer": "The Beach Boys",
+    "year": 1966,
+    "description": "A pop song celebrating the feeling of love and happiness.",
+    "tags": ["pop", "classic", "happy"]
+  },
+  {
+    "title": "Brown Eyed Girl",
+    "singer": "Van Morrison",
+    "year": 1967,
+    "description": "A nostalgic song about young love and carefree days.",
+    "tags": ["pop", "classic", "happy"]
+  },
+  {
+    "title": "Proud Mary",
+    "singer": "Creedence Clearwater Revival",
+    "year": 1969,
+    "description": "A rock classic about movement and change.",
+    "tags": ["rock", "classic", "party"]
+  },
+  {
+    "title": "Satisfaction",
+    "singer": "The Rolling Stones",
+    "year": 1965,
+    "description": "A rock anthem about frustration and desire.",
+    "tags": ["rock", "classic", "rebellion"]
+  },
+  {
+    "title": "You Are So Beautiful",
+    "singer": "Joe Cocker",
+    "year": 1974,
+    "description": "A heartfelt ballad celebrating love and admiration.",
+    "tags": ["rock", "classic", "romantic"]
+  },
+  {
+    "title": "Rain on Me",
+    "singer": "Lady Gaga & Ariana Grande",
+    "year": 2020,
+    "description": "A dance-pop anthem about resilience and support.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Lose Yourself",
+    "singer": "Eminem",
+    "year": 2002,
+    "description": "An intense rap anthem about seizing opportunities.",
+    "tags": ["hip-hop", "motivational", "emotional"]
+  },
+  {
+    "title": "Hotline Bling",
+    "singer": "Drake",
+    "year": 2015,
+    "description": "A catchy pop-rap song about love and nostalgia.",
+    "tags": ["hip-hop", "pop", "romantic"]
+  },
+  {
+    "title": "Stay With Me",
+    "singer": "Sam Smith",
+    "year": 2014,
+    "description": "A soulful ballad about longing and connection.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Good as Hell",
+    "singer": "Lizzo",
+    "year": 2016,
+    "description": "An uplifting anthem about self-love and empowerment.",
+    "tags": ["pop", "R&B", "empowerment"]
+  },
+  {
+    "title": "Kiss Me More",
+    "singer": "Doja Cat ft. SZA",
+    "year": 2021,
+    "description": "A smooth pop song celebrating romance and desire.",
+    "tags": ["pop", "R&B", "romantic"]
+  },
+  {
+    "title": "Nights Like This",
+    "singer": "Kehlani ft. Ty Dolla $ign",
+    "year": 2019,
+    "description": "A smooth R&B track about companionship and support.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "Circles",
+    "singer": "Post Malone",
+    "year": 2019,
+    "description": "A melodic pop song about the complexities of love.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Runaway",
+    "singer": "Kanye West",
+    "year": 2010,
+    "description": "A reflective track about love and loss.",
+    "tags": ["hip-hop", "emotional", "artistic"]
+  },
+  {
+    "title": "Empire State of Mind",
+    "singer": "Jay-Z ft. Alicia Keys",
+    "year": 2009,
+    "description": "An anthem celebrating New York City and its dreams.",
+    "tags": ["hip-hop", "R&B", "motivational"]
+  },
+  {
+    "title": "Somebody That I Used to Know",
+    "singer": "Gotye ft. Kimbra",
+    "year": 2011,
+    "description": "A haunting duet about heartbreak and lost love.",
+    "tags": ["pop", "indie", "emotional"]
+  },
+  {
+    "title": "Superstition",
+    "singer": "Stevie Wonder",
+    "year": 1972,
+    "description": "A funky classic about the dangers of superstition.",
+    "tags": ["soul", "funk", "classic"]
+  },
+  {
+    "title": "The Way You Make Me Feel",
+    "singer": "Michael Jackson",
+    "year": 1987,
+    "description": "A lively pop song celebrating the joy of love.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "My Heart Will Go On",
+    "singer": "Celine Dion",
+    "year": 1997,
+    "description": "The iconic love theme from 'Titanic', expressing eternal love.",
+    "tags": ["pop", "soundtrack", "romantic"]
+  },
+  {
+    "title": "Killing Me Softly with His Song",
+    "singer": "Roberta Flack",
+    "year": 1973,
+    "description": "A soulful ballad about deep emotional connection.",
+    "tags": ["R&B", "classic", "emotional"]
+  },
+  {
+    "title": "Born to Be Wild",
+    "singer": "Steppenwolf",
+    "year": 1968,
+    "description": "A rock anthem about freedom and adventure.",
+    "tags": ["rock", "classic", "rebellion"]
+  },
+  {
+    "title": "What\u00e2\u20ac\u2122s Love Got to Do with It",
+    "singer": "Tina Turner",
+    "year": 1984,
+    "description": "A pop anthem questioning the nature of love.",
+    "tags": ["pop", "classic", "emotional"]
+  },
+  {
+    "title": "I Say a Little Prayer",
+    "singer": "Aretha Franklin",
+    "year": 1968,
+    "description": "A soulful song about devotion and love.",
+    "tags": ["soul", "classic", "romantic"]
+  },
+  {
+    "title": "Good Times",
+    "singer": "Chic",
+    "year": 1979,
+    "description": "A disco classic celebrating joy and togetherness.",
+    "tags": ["disco", "classic", "party"]
+  },
+  {
+    "title": "In the Midnight Hour",
+    "singer": "Wilson Pickett",
+    "year": 1965,
+    "description": "A soul classic about yearning and love.",
+    "tags": ["soul", "classic", "emotional"]
+  },
+  {
+    "title": "Ain't Nobody",
+    "singer": "Chaka Khan",
+    "year": 1983,
+    "description": "A soulful anthem celebrating love and happiness.",
+    "tags": ["R&B", "classic", "happy"]
+  },
+  {
+    "title": "Do That to Me One More Time",
+    "singer": "The Captain & Tennille",
+    "year": 1979,
+    "description": "A soft pop ballad about love and longing.",
+    "tags": ["pop", "classic", "romantic"]
+  },
+  {
+    "title": "You\u00e2\u20ac\u2122re So Vain",
+    "singer": "Carly Simon",
+    "year": 1972,
+    "description": "A classic pop song about narcissism and betrayal.",
+    "tags": ["pop", "classic", "emotional"]
+  },
+  {
+    "title": "You Light Up My Life",
+    "singer": "Debbie Boone",
+    "year": 1977,
+    "description": "A heartfelt ballad about love and appreciation.",
+    "tags": ["pop", "classic", "romantic"]
+  },
+  {
+    "title": "Stayin' Alive",
+    "singer": "Bee Gees",
+    "year": 1977,
+    "description": "A disco anthem about survival and resilience.",
+    "tags": ["disco", "classic", "dance"]
+  },
+  {
+    "title": "Let\u00e2\u20ac\u2122s Get It On",
+    "singer": "Marvin Gaye",
+    "year": 1973,
+    "description": "A sensual anthem celebrating love and intimacy.",
+    "tags": ["soul", "classic", "romantic"]
+  },
+  {
+    "title": "Don't Speak",
+    "singer": "No Doubt",
+    "year": 1996,
+    "description": "A rock ballad about heartbreak and change.",
+    "tags": ["rock", "90s", "emotional"]
+  },
+  {
+    "title": "Back to Black",
+    "singer": "Amy Winehouse",
+    "year": 2006,
+    "description": "A soulful ballad about heartbreak and loss.",
+    "tags": ["soul", "R&B", "emotional"]
+  },
+  {
+    "title": "Shut Up and Dance",
+    "singer": "WALK THE MOON",
+    "year": 2014,
+    "description": "An upbeat anthem encouraging spontaneity and fun.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Lucid Dreams",
+    "singer": "Juice WRLD",
+    "year": 2018,
+    "description": "An emotional track about heartbreak and betrayal.",
+    "tags": ["hip-hop", "emotional", "sad"]
+  },
+  {
+    "title": "Fancy",
+    "singer": "Iggy Azalea ft. Charli XCX",
+    "year": 2014,
+    "description": "A catchy hip-hop track celebrating confidence and glam.",
+    "tags": ["hip-hop", "pop", "dance"]
+  },
+  {
+    "title": "Go Your Own Way",
+    "singer": "Fleetwood Mac",
+    "year": 1977,
+    "description": "A rock classic about heartbreak and independence.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "No Scrubs",
+    "singer": "TLC",
+    "year": 1999,
+    "description": "A classic R&B anthem about self-respect in relationships.",
+    "tags": ["R&B", "90s", "empowerment"]
+  },
+  {
+    "title": "Work",
+    "singer": "Rihanna ft. Drake",
+    "year": 2016,
+    "description": "A dancehall-inspired track about love and desire.",
+    "tags": ["R&B", "dance", "romantic"]
+  },
+  {
+    "title": "Shivers",
+    "singer": "Ed Sheeran",
+    "year": 2021,
+    "description": "A pop song about the excitement of new love.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Good Days",
+    "singer": "SZA",
+    "year": 2020,
+    "description": "A reflective R&B track about hope and growth.",
+    "tags": ["R&B", "hip-hop", "emotional"]
+  },
+  {
+    "title": "Blame It on the Boogie",
+    "singer": "The Jacksons",
+    "year": 1978,
+    "description": "A disco classic that encourages dancing and joy.",
+    "tags": ["disco", "classic", "dance"]
+  },
+  {
+    "title": "Better Now",
+    "singer": "Post Malone",
+    "year": 2018,
+    "description": "A pop-rap track about moving on from heartbreak.",
+    "tags": ["hip-hop", "pop", "emotional"]
+  },
+  {
+    "title": "Dance Again",
+    "singer": "Jennifer Lopez ft. Pitbull",
+    "year": 2012,
+    "description": "An upbeat dance track celebrating life and joy.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "A Thousand Years",
+    "singer": "Christina Perri",
+    "year": 2011,
+    "description": "A romantic ballad about everlasting love.",
+    "tags": ["pop", "romantic", "emotional"]
+  },
+  {
+    "title": "The Middle",
+    "singer": "Zedd, Maren Morris, Grey",
+    "year": 2018,
+    "description": "An upbeat pop song about finding common ground in love.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Somebody to Love",
+    "singer": "Queen",
+    "year": 1976,
+    "description": "A rock anthem about longing for love and connection.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Dancing in the Moonlight",
+    "singer": "Toploader",
+    "year": 2000,
+    "description": "A feel-good song about enjoying life and love.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Don\u00e2\u20ac\u2122t Let Me Down",
+    "singer": "The Chainsmokers ft. Daya",
+    "year": 2016,
+    "description": "An upbeat electronic song about reliance in love.",
+    "tags": ["electronic", "pop", "dance"]
+  },
+  {
+    "title": "Everything I Do (I Do It for You)",
+    "singer": "Bryan Adams",
+    "year": 1991,
+    "description": "A romantic ballad about devotion and love.",
+    "tags": ["rock", "classic", "romantic"]
+  },
+  {
+    "title": "What\u00e2\u20ac\u2122s My Age Again?",
+    "singer": "Blink-182",
+    "year": 1997,
+    "description": "A pop-punk classic about youth and immaturity.",
+    "tags": ["rock", "90s", "fun"]
+  },
+  {
+    "title": "Take On Me",
+    "singer": "a-ha",
+    "year": 1985,
+    "description": "A synth-pop hit known for its catchy melody and iconic video.",
+    "tags": ["pop", "80s", "classic"]
+  },
+  {
+    "title": "Dreams",
+    "singer": "Fleetwood Mac",
+    "year": 1977,
+    "description": "A soft rock classic about love and introspection.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Tears Dry on Their Own",
+    "singer": "Amy Winehouse",
+    "year": 2006,
+    "description": "A soulful track about heartbreak and resilience.",
+    "tags": ["soul", "R&B", "emotional"]
+  },
+  {
+    "title": "Bye Bye Bye",
+    "singer": "NSYNC",
+    "year": 2000,
+    "description": "An upbeat pop song about breaking free from a toxic relationship.",
+    "tags": ["pop", "dance", "90s"]
+  },
+  {
+    "title": "Just the Way You Are",
+    "singer": "Bruno Mars",
+    "year": 2010,
+    "description": "A romantic ballad celebrating natural beauty.",
+    "tags": ["pop", "R&B", "romantic"]
+  },
+  {
+    "title": "Blowin' in the Wind",
+    "singer": "Bob Dylan",
+    "year": 1963,
+    "description": "A folk classic questioning social justice and peace.",
+    "tags": ["folk", "classic", "protest"]
+  },
+  {
+    "title": "Fight for Your Right",
+    "singer": "Beastie Boys",
+    "year": 1986,
+    "description": "A punk-infused hip-hop anthem about rebellion.",
+    "tags": ["hip-hop", "rock", "party"]
+  },
+  {
+    "title": "Creep",
+    "singer": "Radiohead",
+    "year": 1992,
+    "description": "An alternative rock anthem about alienation and insecurity.",
+    "tags": ["rock", "90s", "emotional"]
+  },
+  {
+    "title": "The Sound of Silence",
+    "singer": "Simon & Garfunkel",
+    "year": 1964,
+    "description": "A folk classic exploring themes of isolation and communication.",
+    "tags": ["folk", "classic", "emotional"]
+  },
+  {
+    "title": "Every Rose Has Its Thorn",
+    "singer": "Poison",
+    "year": 1988,
+    "description": "A rock ballad about love and heartbreak.",
+    "tags": ["rock", "80s", "emotional"]
+  },
+  {
+    "title": "Hallelujah",
+    "singer": "Jeff Buckley",
+    "year": 1994,
+    "description": "A haunting cover of Leonard Cohen's classic about love and loss.",
+    "tags": ["rock", "emotional", "classic"]
+  },
+  {
+    "title": "All Star",
+    "singer": "Smash Mouth",
+    "year": 1999,
+    "description": "An upbeat rock song encouraging confidence and fun.",
+    "tags": ["rock", "90s", "happy"]
+  },
+  {
+    "title": "Karma Chameleon",
+    "singer": "Culture Club",
+    "year": 1983,
+    "description": "A pop classic about identity and acceptance.",
+    "tags": ["pop", "80s", "happy"]
+  },
+  {
+    "title": "Waterfalls",
+    "singer": "TLC",
+    "year": 1995,
+    "description": "A socially conscious R&B track addressing important issues.",
+    "tags": ["R&B", "90s", "protest"]
+  },
+  {
+    "title": "Time After Time",
+    "singer": "Cyndi Lauper",
+    "year": 1984,
+    "description": "A timeless ballad about loyalty and love.",
+    "tags": ["pop", "80s", "romantic"]
+  },
+  {
+    "title": "Uptown Girl",
+    "singer": "Billy Joel",
+    "year": 1983,
+    "description": "A fun pop song about a working-class man's love for an upper-class girl.",
+    "tags": ["pop", "80s", "happy"]
+  },
+  {
+    "title": "Smooth",
+    "singer": "Santana ft. Rob Thomas",
+    "year": 1999,
+    "description": "A Latin rock hit about passion and romance.",
+    "tags": ["rock", "Latin", "romantic"]
+  },
+  {
+    "title": "The Way I Am",
+    "singer": "Ingrid Michaelson",
+    "year": 2007,
+    "description": "A sweet indie pop song about unconditional love.",
+    "tags": ["indie", "pop", "romantic"]
+  },
+  {
+    "title": "Valerie",
+    "singer": "Mark Ronson ft. Amy Winehouse",
+    "year": 2007,
+    "description": "A soulful cover about longing and love.",
+    "tags": ["soul", "pop", "romantic"]
+  },
+  {
+    "title": "Seven Nation Army",
+    "singer": "The White Stripes",
+    "year": 2003,
+    "description": "A rock anthem known for its iconic guitar riff and themes of defiance.",
+    "tags": ["rock", "alternative", "rebellion"]
+  },
+  {
+    "title": "Take Me Home",
+    "singer": "Country Roads",
+    "year": 1971,
+    "description": "A classic folk song about nostalgia and longing for home.",
+    "tags": ["country", "folk", "classic"]
+  },
+  {
+    "title": "Happy",
+    "singer": "Pharrell Williams",
+    "year": 2013,
+    "description": "An upbeat pop song celebrating happiness and positivity.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Just a Girl",
+    "singer": "No Doubt",
+    "year": 1995,
+    "description": "A pop-punk anthem about gender roles and independence.",
+    "tags": ["rock", "90s", "empowerment"]
+  },
+  {
+    "title": "Bad Romance",
+    "singer": "Lady Gaga",
+    "year": 2009,
+    "description": "A dark pop anthem about love and obsession.",
+    "tags": ["pop", "dance", "emotional"]
+  },
+  {
+    "title": "We Found Love",
+    "singer": "Rihanna ft. Calvin Harris",
+    "year": 2011,
+    "description": "An electronic dance song about finding love in difficult times.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "S.O.B.",
+    "singer": "Nathaniel Rateliff & The Night Sweats",
+    "year": 2015,
+    "description": "A soulful track about desperation and heartache.",
+    "tags": ["soul", "rock", "emotional"]
+  },
+  {
+    "title": "You Belong with Me",
+    "singer": "Taylor Swift",
+    "year": 2008,
+    "description": "A country-pop anthem about unrequited love.",
+    "tags": ["country", "pop", "romantic"]
+  },
+  {
+    "title": "Shut Up and Drive",
+    "singer": "Rihanna",
+    "year": 2007,
+    "description": "An upbeat pop song about confidence and attraction.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Sugar",
+    "singer": "Maroon 5",
+    "year": 2014,
+    "description": "A catchy pop song about love and sweetness.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Criminal",
+    "singer": "Britney Spears",
+    "year": 2011,
+    "description": "A pop song about a dangerous love affair.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Electric Feel",
+    "singer": "MGMT",
+    "year": 2007,
+    "description": "An indie hit about love and attraction with a psychedelic vibe.",
+    "tags": ["indie", "pop", "dance"]
+  },
+  {
+    "title": "Take a Chance on Me",
+    "singer": "ABBA",
+    "year": 1977,
+    "description": "A cheerful pop song about love and taking risks.",
+    "tags": ["pop", "classic", "happy"]
+  },
+  {
+    "title": "Need You Now",
+    "singer": "Lady A",
+    "year": 2009,
+    "description": "A country ballad about loneliness and longing for a loved one.",
+    "tags": ["country", "pop", "emotional"]
+  },
+  {
+    "title": "The Climb",
+    "singer": "Miley Cyrus",
+    "year": 2009,
+    "description": "An inspirational ballad about perseverance and hope.",
+    "tags": ["pop", "country", "motivational"]
+  },
+  {
+    "title": "American Idiot",
+    "singer": "Green Day",
+    "year": 2004,
+    "description": "A punk rock anthem criticizing American culture and politics.",
+    "tags": ["punk", "rock", "protest"]
+  },
+  {
+    "title": "Good Riddance (Time of Your Life)",
+    "singer": "Green Day",
+    "year": 1997,
+    "description": "A reflective ballad about cherishing memories.",
+    "tags": ["rock", "emotional", "nostalgic"]
+  },
+  {
+    "title": "Rockstar",
+    "singer": "Post Malone ft. 21 Savage",
+    "year": 2017,
+    "description": "A hip-hop track about fame and lifestyle.",
+    "tags": ["hip-hop", "rap", "party"]
+  },
+  {
+    "title": "Bubbly",
+    "singer": "Colbie Caillat",
+    "year": 2007,
+    "description": "A soft pop song about the warmth of love.",
+    "tags": ["pop", "acoustic", "romantic"]
+  },
+  {
+    "title": "All the Small Things",
+    "singer": "Blink-182",
+    "year": 1999,
+    "description": "A pop-punk classic about love and appreciation.",
+    "tags": ["rock", "90s", "happy"]
+  },
+  {
+    "title": "Try",
+    "singer": "P!nk",
+    "year": 2012,
+    "description": "An empowering anthem about resilience and trying again.",
+    "tags": ["pop", "rock", "motivational"]
+  },
+  {
+    "title": "I Knew You Were Trouble",
+    "singer": "Taylor Swift",
+    "year": 2012,
+    "description": "A pop song about heartbreak and betrayal.",
+    "tags": ["pop", "country", "emotional"]
+  },
+  {
+    "title": "Break Free",
+    "singer": "Ariana Grande",
+    "year": 2014,
+    "description": "An empowering pop anthem about liberation and self-discovery.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Light My Fire",
+    "singer": "The Doors",
+    "year": 1967,
+    "description": "A classic rock song about desire and passion.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "A Sky Full of Stars",
+    "singer": "Coldplay",
+    "year": 2014,
+    "description": "An uplifting anthem about hope and love.",
+    "tags": ["pop", "rock", "happy"]
+  },
+  {
+    "title": "I Don't Wanna Live Forever",
+    "singer": "Zayn & Taylor Swift",
+    "year": 2016,
+    "description": "A moody pop duet about love and longing.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Ice Ice Baby",
+    "singer": "Vanilla Ice",
+    "year": 1990,
+    "description": "A hip-hop classic that became a cultural phenomenon.",
+    "tags": ["hip-hop", "90s", "viral"]
+  },
+  {
+    "title": "Back to You",
+    "singer": "Selena Gomez",
+    "year": 2018,
+    "description": "A pop song about yearning and unresolved love.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Born This Way",
+    "singer": "Lady Gaga",
+    "year": 2011,
+    "description": "An empowering anthem celebrating individuality and acceptance.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Closer",
+    "singer": "The Chainsmokers ft. Halsey",
+    "year": 2016,
+    "description": "A catchy electronic song about love and nostalgia.",
+    "tags": ["electronic", "pop", "romantic"]
+  },
+  {
+    "title": "The Man",
+    "singer": "Alicia Keys",
+    "year": 2019,
+    "description": "A powerful anthem about gender equality and empowerment.",
+    "tags": ["R&B", "pop", "empowerment"]
+  },
+  {
+    "title": "Never Gonna Give You Up",
+    "singer": "Rick Astley",
+    "year": 1987,
+    "description": "An iconic pop song known for its catchy tune and meme status.",
+    "tags": ["pop", "80s", "viral"]
+  },
+  {
+    "title": "What Makes You Beautiful",
+    "singer": "One Direction",
+    "year": 2011,
+    "description": "A catchy pop song about appreciating natural beauty.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "I Want to Know What Love Is",
+    "singer": "Foreigner",
+    "year": 1984,
+    "description": "A power ballad about longing for love and connection.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Jump",
+    "singer": "Van Halen",
+    "year": 1984,
+    "description": "A rock anthem encouraging positivity and taking risks.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Walking on Sunshine",
+    "singer": "Katrina and the Waves",
+    "year": 1985,
+    "description": "An upbeat song celebrating joy and optimism.",
+    "tags": ["pop", "80s", "happy"]
+  },
+  {
+    "title": "Torn",
+    "singer": "Natalie Imbruglia",
+    "year": 1997,
+    "description": "A pop-rock ballad about heartbreak and confusion.",
+    "tags": ["pop", "90s", "emotional"]
+  },
+  {
+    "title": "Bohemian Rhapsody",
+    "singer": "Queen",
+    "year": 1975,
+    "description": "A rock opera blending multiple musical styles in one epic song.",
+    "tags": ["rock", "classic", "epic"]
+  },
+  {
+    "title": "Don\u00e2\u20ac\u2122t Stop Believin\u00e2\u20ac\u2122",
+    "singer": "Journey",
+    "year": 1981,
+    "description": "An anthem about hope and perseverance through life's challenges.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Hotel California",
+    "singer": "Eagles",
+    "year": 1976,
+    "description": "A classic rock song about the darker side of the American dream.",
+    "tags": ["rock", "classic", "storytelling"]
+  },
+  {
+    "title": "We Will Rock You",
+    "singer": "Queen",
+    "year": 1977,
+    "description": "A stadium rock anthem known for its stomping beat and chant.",
+    "tags": ["rock", "classic", "anthem"]
+  },
+  {
+    "title": "Kiss from a Rose",
+    "singer": "Seal",
+    "year": 1994,
+    "description": "A soulful ballad about love and longing, featuring lush instrumentation.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "You Are Not Alone",
+    "singer": "Michael Jackson",
+    "year": 1995,
+    "description": "A heartfelt ballad about support and companionship.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "I Want it That Way",
+    "singer": "Backstreet Boys",
+    "year": 1999,
+    "description": "A pop classic about longing and romantic tension.",
+    "tags": ["pop", "90s", "romantic"]
+  },
+  {
+    "title": "Don't You (Forget About Me)",
+    "singer": "Simple Minds",
+    "year": 1985,
+    "description": "An iconic song from The Breakfast Club, about youth and nostalgia.",
+    "tags": ["rock", "80s", "nostalgic"]
+  },
+  {
+    "title": "Can't Help Falling in Love",
+    "singer": "Elvis Presley",
+    "year": 1961,
+    "description": "A timeless love ballad about irresistible attraction.",
+    "tags": ["pop", "classic", "romantic"]
+  },
+  {
+    "title": "Total Eclipse of the Heart",
+    "singer": "Bonnie Tyler",
+    "year": 1983,
+    "description": "A dramatic ballad about heartbreak and longing.",
+    "tags": ["pop", "80s", "emotional"]
+  },
+  {
+    "title": "Another Day in Paradise",
+    "singer": "Phil Collins",
+    "year": 1989,
+    "description": "A pop rock song addressing homelessness and social issues.",
+    "tags": ["pop", "rock", "protest"]
+  },
+  {
+    "title": "Happy Together",
+    "singer": "The Turtles",
+    "year": 1967,
+    "description": "A feel-good song about love and togetherness.",
+    "tags": ["pop", "classic", "happy"]
+  },
+  {
+    "title": "Nothing Compares 2 U",
+    "singer": "Sin\u00c3\u00a9ad O'Connor",
+    "year": 1990,
+    "description": "A haunting ballad about loss and heartbreak.",
+    "tags": ["pop", "emotional", "ballad"]
+  },
+  {
+    "title": "Waiting on the World to Change",
+    "singer": "John Mayer",
+    "year": 2006,
+    "description": "A reflective song about social change and hope.",
+    "tags": ["pop", "rock", "protest"]
+  },
+  {
+    "title": "Hallelujah",
+    "singer": "Leonard Cohen",
+    "year": 1984,
+    "description": "A haunting song about love, loss, and spirituality.",
+    "tags": ["folk", "classic", "emotional"]
+  },
+  {
+    "title": "In the End",
+    "singer": "Linkin Park",
+    "year": 2001,
+    "description": "A nu-metal anthem about struggle and persistence.",
+    "tags": ["rock", "2000s", "emotional"]
+  },
+  {
+    "title": "Lose Yourself to Dance",
+    "singer": "Daft Punk ft. Pharrell Williams",
+    "year": 2013,
+    "description": "A funky track encouraging listeners to let loose and dance.",
+    "tags": ["funk", "dance", "happy"]
+  },
+  {
+    "title": "Say Something",
+    "singer": "A Great Big World ft. Christina Aguilera",
+    "year": 2013,
+    "description": "An emotional ballad about love and heartbreak.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "Livin' la Vida Loca",
+    "singer": "Ricky Martin",
+    "year": 1999,
+    "description": "A Latin pop hit celebrating wild and passionate love.",
+    "tags": ["pop", "Latin", "dance"]
+  },
+  {
+    "title": "Sweet Home Alabama",
+    "singer": "Lynyrd Skynyrd",
+    "year": 1974,
+    "description": "A classic rock anthem celebrating Southern pride.",
+    "tags": ["rock", "classic", "party"]
+  },
+  {
+    "title": "My Immortal",
+    "singer": "Evanescence",
+    "year": 2003,
+    "description": "A haunting ballad about loss and longing.",
+    "tags": ["rock", "goth", "emotional"]
+  },
+  {
+    "title": "One Dance",
+    "singer": "Drake ft. Wizkid & Kyla",
+    "year": 2016,
+    "description": "A dancehall-influenced pop song about love and nightlife.",
+    "tags": ["hip-hop", "dance", "party"]
+  },
+  {
+    "title": "What Do You Mean?",
+    "singer": "Justin Bieber",
+    "year": 2015,
+    "description": "A pop song exploring the confusion of relationships.",
+    "tags": ["pop", "dance", "emotional"]
+  },
+  {
+    "title": "The Way I Are",
+    "singer": "Timbaland ft. Keri Hilson",
+    "year": 2007,
+    "description": "An upbeat hip-hop track about self-acceptance.",
+    "tags": ["hip-hop", "dance", "empowerment"]
+  },
+  {
+    "title": "I Don't Want to Miss a Thing",
+    "singer": "Aerosmith",
+    "year": 1998,
+    "description": "A romantic rock ballad about love and longing.",
+    "tags": ["rock", "romantic", "emotional"]
+  },
+  {
+    "title": "Killing Me Softly With His Song",
+    "singer": "Roberta Flack",
+    "year": 1973,
+    "description": "A soulful classic about emotional connection through music.",
+    "tags": ["soul", "classic", "emotional"]
+  },
+  {
+    "title": "Shiver",
+    "singer": "Lucy Rose",
+    "year": 2012,
+    "description": "A delicate indie song about longing and vulnerability.",
+    "tags": ["indie", "folk", "emotional"]
+  },
+  {
+    "title": "Here Comes the Sun",
+    "singer": "The Beatles",
+    "year": 1969,
+    "description": "A hopeful song about renewal and optimism.",
+    "tags": ["rock", "classic", "happy"]
+  },
+  {
+    "title": "One More Night",
+    "singer": "Maroon 5",
+    "year": 2012,
+    "description": "A pop song about longing and desire.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "Young and Beautiful",
+    "singer": "Lana Del Rey",
+    "year": 2013,
+    "description": "A haunting ballad about love and mortality.",
+    "tags": ["pop", "indie", "emotional"]
+  },
+  {
+    "title": "I'm Yours",
+    "singer": "Jason Mraz",
+    "year": 2008,
+    "description": "A feel-good acoustic love song about commitment.",
+    "tags": ["pop", "acoustic", "romantic"]
+  },
+  {
+    "title": "Hurt",
+    "singer": "Nine Inch Nails",
+    "year": 1994,
+    "description": "A dark industrial rock song about pain and regret.",
+    "tags": ["rock", "emotional", "alternative"]
+  },
+  {
+    "title": "We Are Never Ever Getting Back Together",
+    "singer": "Taylor Swift",
+    "year": 2012,
+    "description": "A catchy pop song about breaking free from a toxic relationship.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "What a Girl Wants",
+    "singer": "Christina Aguilera",
+    "year": 1999,
+    "description": "A pop song about self-confidence and love.",
+    "tags": ["pop", "90s", "empowerment"]
+  },
+  {
+    "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+    "singer": "ABBA",
+    "year": 1979,
+    "description": "A disco hit about longing and desire.",
+    "tags": ["disco", "classic", "dance"]
+  },
+  {
+    "title": "Take Me Home",
+    "singer": "Phil Collins",
+    "year": 1985,
+    "description": "A heartfelt ballad about longing for home and connection.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Last Christmas",
+    "singer": "Wham!",
+    "year": 1984,
+    "description": "A pop classic about love and heartbreak during the holidays.",
+    "tags": ["pop", "80s", "nostalgic"]
+  },
+  {
+    "title": "We Belong Together",
+    "singer": "Mariah Carey",
+    "year": 2005,
+    "description": "A soulful ballad about longing for a lost love.",
+    "tags": ["R&B", "pop", "emotional"]
+  },
+  {
+    "title": "I Knew I Loved You",
+    "singer": "Savage Garden",
+    "year": 1999,
+    "description": "A romantic ballad about destined love.",
+    "tags": ["pop", "90s", "romantic"]
+  },
+  {
+    "title": "Best Song Ever",
+    "singer": "One Direction",
+    "year": 2013,
+    "description": "An upbeat pop song celebrating great memories and fun times.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Cold Cold Heart",
+    "singer": "Elton John",
+    "year": 2003,
+    "description": "A pop song about heartbreak and emotional distance.",
+    "tags": ["pop", "classic", "emotional"]
+  },
+  {
+    "title": "Don't Let Me Down",
+    "singer": "The Chainsmokers ft. Daya",
+    "year": 2016,
+    "description": "An electronic pop hit about needing support during tough times.",
+    "tags": ["pop", "dance", "emotional"]
+  },
+  {
+    "title": "Crazy in Love",
+    "singer": "Beyonc\u00c3\u00a9 ft. Jay-Z",
+    "year": 2003,
+    "description": "A high-energy pop song about passionate love.",
+    "tags": ["R&B", "pop", "dance"]
+  },
+  {
+    "title": "Roxanne",
+    "singer": "The Police",
+    "year": 1978,
+    "description": "A rock classic about unrequited love and longing.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Love on Top",
+    "singer": "Beyonc\u00c3\u00a9",
+    "year": 2011,
+    "description": "An uplifting R&B song celebrating joyful love.",
+    "tags": ["R&B", "pop", "happy"]
+  },
+  {
+    "title": "Backstreet's Back",
+    "singer": "Backstreet Boys",
+    "year": 1997,
+    "description": "A catchy pop song marking the return of the iconic boy band.",
+    "tags": ["pop", "90s", "dance"]
+  },
+  {
+    "title": "Chasing Pavements",
+    "singer": "Adele",
+    "year": 2008,
+    "description": "A soulful ballad about love and uncertainty.",
+    "tags": ["pop", "soul", "emotional"]
+  },
+  {
+    "title": "Say My Name",
+    "singer": "Destiny's Child",
+    "year": 1999,
+    "description": "A powerful R&B song about trust and relationships.",
+    "tags": ["R&B", "90s", "empowerment"]
+  },
+  {
+    "title": "The Only Exception",
+    "singer": "Paramore",
+    "year": 2009,
+    "description": "An emotional ballad about love and vulnerability.",
+    "tags": ["rock", "emo", "emotional"]
+  },
+  {
+    "title": "Run the World (Girls)",
+    "singer": "Beyonc\u00c3\u00a9",
+    "year": 2011,
+    "description": "An empowering anthem celebrating female strength and independence.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Mirrors",
+    "singer": "Justin Timberlake",
+    "year": 2013,
+    "description": "A romantic pop song about reflection and love.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "We Don't Talk Anymore",
+    "singer": "Charlie Puth ft. Selena Gomez",
+    "year": 2016,
+    "description": "A catchy pop song about lost love and nostalgia.",
+    "tags": ["pop", "dance", "emotional"]
+  },
+  {
+    "title": "Party in the USA",
+    "singer": "Miley Cyrus",
+    "year": 2009,
+    "description": "A feel-good anthem about confidence and belonging.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Beautiful",
+    "singer": "Christina Aguilera",
+    "year": 2002,
+    "description": "An empowering ballad about self-acceptance and beauty.",
+    "tags": ["pop", "dance", "empowerment"]
+  },
+  {
+    "title": "Gold Digger",
+    "singer": "Kanye West ft. Jamie Foxx",
+    "year": 2005,
+    "description": "A hip-hop hit about relationships and wealth.",
+    "tags": ["hip-hop", "dance", "party"]
+  },
+  {
+    "title": "One Call Away",
+    "singer": "Charlie Puth",
+    "year": 2016,
+    "description": "A pop song about being there for someone in need.",
+    "tags": ["pop", "dance", "romantic"]
+  },
+  {
+    "title": "You're Still the One",
+    "singer": "Shania Twain",
+    "year": 1997,
+    "description": "A country-pop love song celebrating lasting love.",
+    "tags": ["country", "pop", "romantic"]
+  },
+  {
+    "title": "Kiss Me",
+    "singer": "Sixpence None the Richer",
+    "year": 1998,
+    "description": "A sweet pop song about young love and romance.",
+    "tags": ["pop", "90s", "romantic"]
+  },
+  {
+    "title": "Here I Go Again",
+    "singer": "Whitesnake",
+    "year": 1987,
+    "description": "A rock anthem about resilience and moving forward.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "You Are the Reason",
+    "singer": "Calum Scott",
+    "year": 2017,
+    "description": "A heartfelt ballad about love and regret.",
+    "tags": ["pop", "emotional", "romantic"]
+  },
+  {
+    "title": "Falling",
+    "singer": "Harry Styles",
+    "year": 2019,
+    "description": "A vulnerable ballad about love and self-doubt.",
+    "tags": ["pop", "emotional", "romantic"]
+  },
+  {
+    "title": "Let It Go",
+    "singer": "Idina Menzel",
+    "year": 2013,
+    "description": "An empowering anthem about self-acceptance and freedom.",
+    "tags": ["pop", "soundtrack", "empowerment"]
+  },
+  {
+    "title": "You Make My Dreams (Come True)",
+    "singer": "Hall & Oates",
+    "year": 1980,
+    "description": "An upbeat pop song celebrating love and joy.",
+    "tags": ["pop", "80s", "happy"]
+  },
+  {
+    "title": "Landslide",
+    "singer": "Fleetwood Mac",
+    "year": 1975,
+    "description": "A reflective song about change and growth.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "When You Believe",
+    "singer": "Whitney Houston & Mariah Carey",
+    "year": 1998,
+    "description": "An uplifting ballad about faith and hope.",
+    "tags": ["pop", "R&B", "motivational"]
+  },
+  {
+    "title": "We Are Family",
+    "singer": "Sister Sledge",
+    "year": 1979,
+    "description": "A disco anthem about unity and togetherness.",
+    "tags": ["disco", "classic", "happy"]
+  },
+  {
+    "title": "I'll Be There for You",
+    "singer": "The Rembrandts",
+    "year": 1995,
+    "description": "The iconic theme from *Friends*, celebrating friendship.",
+    "tags": ["pop", "90s", "happy"]
+  },
+  {
+    "title": "Can\u00e2\u20ac\u2122t Help Falling in Love",
+    "singer": "Elvis Presley",
+    "year": 1961,
+    "description": "A timeless love ballad about irresistible attraction.",
+    "tags": ["rock", "classic", "romantic"]
+  },
+  {
+    "title": "Your Song",
+    "singer": "Elton John",
+    "year": 1970,
+    "description": "A heartfelt ballad about love and devotion.",
+    "tags": ["pop", "classic", "romantic"]
+  },
+  {
+    "title": "Take It to Heart",
+    "singer": "Kenny Chesney",
+    "year": 2012,
+    "description": "A country ballad about love and life's challenges.",
+    "tags": ["country", "romantic", "emotional"]
+  },
+  {
+    "title": "Love Shack",
+    "singer": "The B-52's",
+    "year": 1989,
+    "description": "A fun, upbeat song about love and celebration.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Blackbird",
+    "singer": "The Beatles",
+    "year": 1968,
+    "description": "A beautiful ballad about freedom and hope.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Finesse",
+    "singer": "Bruno Mars",
+    "year": 2018,
+    "description": "A funky pop song celebrating love and style.",
+    "tags": ["pop", "R&B", "happy"]
+  },
+  {
+    "title": "Wish You Were Here",
+    "singer": "Pink Floyd",
+    "year": 1975,
+    "description": "A reflective rock ballad about longing and loss.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Stand By Me",
+    "singer": "Ben E. King",
+    "year": 1961,
+    "description": "A classic soul song about loyalty and support.",
+    "tags": ["soul", "classic", "motivational"]
+  },
+  {
+    "title": "The Power of Love",
+    "singer": "Celine Dion",
+    "year": 1993,
+    "description": "A powerful ballad about love and strength.",
+    "tags": ["pop", "R&B", "romantic"]
+  },
+  {
+    "title": "Back to December",
+    "singer": "Taylor Swift",
+    "year": 2010,
+    "description": "A reflective ballad about regret and lost love.",
+    "tags": ["pop", "country", "emotional"]
+  },
+  {
+    "title": "This Love",
+    "singer": "Maroon 5",
+    "year": 2004,
+    "description": "A pop-rock ballad about love and loss.",
+    "tags": ["pop", "rock", "romantic"]
+  },
+  {
+    "title": "Grenade",
+    "singer": "Bruno Mars",
+    "year": 2010,
+    "description": "A heartfelt ballad about unrequited love and sacrifice.",
+    "tags": ["pop", "R&B", "emotional"]
+  },
+  {
+    "title": "On Top of the World",
+    "singer": "Imagine Dragons",
+    "year": 2013,
+    "description": "An uplifting anthem about success and happiness.",
+    "tags": ["pop", "rock", "happy"]
+  },
+  {
+    "title": "All I Want for Christmas Is You",
+    "singer": "Mariah Carey",
+    "year": 1994,
+    "description": "A holiday classic celebrating love and joy.",
+    "tags": ["pop", "holiday", "happy"]
+  },
+  {
+    "title": "Every Little Thing She Does Is Magic",
+    "singer": "The Police",
+    "year": 1981,
+    "description": "A catchy rock song about infatuation.",
+    "tags": ["rock", "classic", "happy"]
+  },
+  {
+    "title": "You\u00e2\u20ac\u2122re Still the One",
+    "singer": "Shania Twain",
+    "year": 1997,
+    "description": "A country-pop love song celebrating lasting love.",
+    "tags": ["country", "pop", "romantic"]
+  },
+  {
+    "title": "I Just Called to Say I Love You",
+    "singer": "Stevie Wonder",
+    "year": 1984,
+    "description": "A soulful declaration of love.",
+    "tags": ["soul", "classic", "romantic"]
+  },
+  {
+    "title": "You Make Loving Fun",
+    "singer": "Fleetwood Mac",
+    "year": 1977,
+    "description": "A joyful rock song about love and happiness.",
+    "tags": ["rock", "classic", "happy"]
+  },
+  {
+    "title": "I Will Follow You into the Dark",
+    "singer": "Death Cab for Cutie",
+    "year": 2005,
+    "description": "A haunting ballad about love and commitment.",
+    "tags": ["indie", "emotional", "romantic"]
+  },
+  {
+    "title": "Proud Mary",
+    "singer": "Tina Turner",
+    "year": 1971,
+    "description": "A classic rock song about resilience and moving forward.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Chasing Memories",
+    "singer": "Kacey Musgraves",
+    "year": 2018,
+    "description": "A reflective country song about nostalgia and love.",
+    "tags": ["country", "emotional", "nostalgic"]
+  },
+  {
+    "title": "Back for Good",
+    "singer": "Take That",
+    "year": 1995,
+    "description": "A heartfelt ballad about regret and wanting to reconcile.",
+    "tags": ["pop", "90s", "romantic"]
+  },
+  {
+    "title": "Love Will Keep Us Together",
+    "singer": "Captain & Tennille",
+    "year": 1975,
+    "description": "A pop classic about enduring love.",
+    "tags": ["pop", "classic", "romantic"]
+  },
+  {
+    "title": "If I Ain't Got You",
+    "singer": "Alicia Keys",
+    "year": 2004,
+    "description": "A soulful ballad about the importance of love over material things.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "Taki Taki",
+    "singer": "DJs Snake ft. Selena Gomez, Ozuna, Cardi B",
+    "year": 2018,
+    "description": "A reggaeton hit celebrating fun and dance.",
+    "tags": ["reggaeton", "dance", "happy"]
+  },
+  {
+    "title": "I Like It",
+    "singer": "Cardi B ft. Bad Bunny & J Balvin",
+    "year": 2018,
+    "description": "A vibrant reggaeton track celebrating love and culture.",
+    "tags": ["reggaeton", "hip-hop", "happy"]
+  },
+  {
+    "title": "Stronger",
+    "singer": "Kanye West",
+    "year": 2007,
+    "description": "An uplifting hip-hop anthem about resilience and strength.",
+    "tags": ["hip-hop", "motivational", "classic"]
+  },
+  {
+    "title": "Runaway Baby",
+    "singer": "Bruno Mars",
+    "year": 2010,
+    "description": "An upbeat pop song about love and fun.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Hold On",
+    "singer": "Chvrches",
+    "year": 2018,
+    "description": "A synth-pop anthem about perseverance and hope.",
+    "tags": ["pop", "dance", "motivational"]
+  },
+  {
+    "title": "Treasure",
+    "singer": "Bruno Mars",
+    "year": 2013,
+    "description": "A funky pop song celebrating love and attraction.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Blow",
+    "singer": "Kesha",
+    "year": 2011,
+    "description": "A party anthem celebrating fun and nightlife.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "Everybody Wants to Rule the World",
+    "singer": "Tears for Fears",
+    "year": 1985,
+    "description": "A classic rock song about ambition and power.",
+    "tags": ["rock", "80s", "classic"]
+  },
+  {
+    "title": "In My Feelings",
+    "singer": "Drake",
+    "year": 2018,
+    "description": "A catchy hip-hop track about love and relationships.",
+    "tags": ["hip-hop", "dance", "happy"]
+  },
+  {
+    "title": "Man in the Mirror",
+    "singer": "Michael Jackson",
+    "year": 1988,
+    "description": "A powerful anthem about personal change and social responsibility.",
+    "tags": ["pop", "classic", "motivational"]
+  },
+  {
+    "title": "I Don't Want to Talk About It",
+    "singer": "Rod Stewart",
+    "year": 1975,
+    "description": "A soulful ballad about heartbreak.",
+    "tags": ["rock", "classic", "emotional"]
+  },
+  {
+    "title": "Ain't it Fun",
+    "singer": "Paramore",
+    "year": 2013,
+    "description": "A fun rock song about the realities of adulthood.",
+    "tags": ["rock", "dance", "happy"]
+  },
+  {
+    "title": "In Your Eyes",
+    "singer": "Peter Gabriel",
+    "year": 1986,
+    "description": "A romantic song about deep emotional connection.",
+    "tags": ["rock", "classic", "romantic"]
+  },
+  {
+    "title": "What a Man",
+    "singer": "Salt-N-Pepa ft. En Vogue",
+    "year": 1993,
+    "description": "A hip-hop anthem celebrating men and appreciation.",
+    "tags": ["hip-hop", "R&B", "happy"]
+  },
+  {
+    "title": "Hello, Goodbye",
+    "singer": "The Beatles",
+    "year": 1967,
+    "description": "A whimsical song about love and relationships.",
+    "tags": ["rock", "classic", "happy"]
+  },
+  {
+    "title": "You Make Me Feel Brand New",
+    "singer": "The Stylistics",
+    "year": 1973,
+    "description": "A romantic soul ballad about love and renewal.",
+    "tags": ["soul", "classic", "romantic"]
+  },
+  {
+    "title": "Always Be My Baby",
+    "singer": "Mariah Carey",
+    "year": 1996,
+    "description": "A sweet R&B ballad about enduring love.",
+    "tags": ["R&B", "pop", "romantic"]
+  },
+  {
+    "title": "Don't Stop 'Til You Get Enough",
+    "singer": "Michael Jackson",
+    "year": 1979,
+    "description": "A disco classic about enjoying life to the fullest.",
+    "tags": ["pop", "dance", "happy"]
+  },
+  {
+    "title": "You Know I'm No Good",
+    "singer": "Amy Winehouse",
+    "year": 2006,
+    "description": "A jazzy track about complicated love.",
+    "tags": ["R&B", "soul", "emotional"]
+  },
+  {
+    "title": "Come Together",
+    "singer": "The Beatles",
+    "year": 1969,
+    "description": "A classic rock song about unity and connection.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "It's Raining Men",
+    "singer": "The Weather Girls",
+    "year": 1982,
+    "description": "A fun disco anthem celebrating joy and empowerment.",
+    "tags": ["disco", "classic", "happy"]
+  },
+  {
+    "title": "I Shot the Sheriff",
+    "singer": "Eric Clapton",
+    "year": 1973,
+    "description": "A reggae-influenced rock song about justice and rebellion.",
+    "tags": ["rock", "classic", "protest"]
+  },
+  {
+    "title": "Take Your Time",
+    "singer": "Sam Hunt",
+    "year": 2014,
+    "description": "A country ballad about patience in love.",
+    "tags": ["country", "romantic", "emotional"]
+  },
+  {
+    "title": "Summer in the City",
+    "singer": "The Lovin' Spoonful",
+    "year": 1966,
+    "description": "A fun rock song about summer love.",
+    "tags": ["rock", "classic", "happy"]
+  },
+  {
+    "title": "Don't Let the Sun Go Down on Me",
+    "singer": "Elton John",
+    "year": 1991,
+    "description": "A ballad about vulnerability and emotional connection.",
+    "tags": ["pop", "classic", "emotional"]
+  },
+  {
+    "title": "Goodbye Yellow Brick Road",
+    "singer": "Elton John",
+    "year": 1973,
+    "description": "A reflective song about searching for happiness.",
+    "tags": ["pop", "classic", "motivational"]
+  },
+  {
+    "title": "Dancing with Myself",
+    "singer": "Billy Idol",
+    "year": 1981,
+    "description": "A rock anthem about independence and self-reliance.",
+    "tags": ["rock", "classic", "motivational"]
+  },
+  {
+    "title": "Upside Down",
+    "singer": "Diana Ross",
+    "year": 1980,
+    "description": "A disco classic celebrating joy and love.",
+    "tags": ["disco", "classic", "happy"]
+  },
+  {
+    "title": "Riptide",
+    "singer": "Vance Joy",
+    "year": 2013,
+    "description": "A catchy indie folk song about love and longing.",
+    "tags": ["indie", "folk", "happy"]
+  }
+]
