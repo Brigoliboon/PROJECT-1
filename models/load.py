@@ -1,17 +1,17 @@
 import json
-import playlist
+from Playlist import Playlist
 import time
-from track import Track
+from .Playlist.track import Track
 
-path = 'D:\\Central Mindanao University\\2nd Year\\Data Structure and Algorithms\\Projects\\New folder\\database\\finaldb.json'
+path = 'D:\\Central Mindanao University\\2nd Year\\Data Structure and Algorithms\\Projects\\Project 1\\database\\musicdb.json'
 
 def loadDefault():
-    pl = playlist.PlayList()
+    pl = Playlist()
     with open(path, 'r') as f:
         musics = []
         data = json.loads(f.read())
     for music in data:
-        m = Track(music['title'], music['singer'], music['year'], music['description'], Track.Tags(music['tags']))
+        m = Track(music['title'], music['singer'], music['year'], music['description'], music['tags'])
         pl.insert(m)
     print(musics)
     return pl
