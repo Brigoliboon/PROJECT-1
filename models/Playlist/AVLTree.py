@@ -1,4 +1,5 @@
 from arraylist import ArrayList
+from track import Track
 class Node:
     def __init__(self, value):
         self.value = value
@@ -153,25 +154,28 @@ class AVLTree:
     def search(self, value):
         return self.__search(self.root, value)
     
-    def inorder(self, root:Node)-> list:
+    def inorder(self, root:Node)-> ArrayList:
         # Inorder traversal (Left, Root, Right)
-        inorder = []
+        arraylist = ArrayList(size=self.__size)
         if root:
             self.inorder(root.left)
-            inorder.append(root)
+            arraylist.insert(root.value)
             self.inorder(root.right)
         
-        return inorder
+        return arraylist
     def preorder(self, root:Node):
         # Preorder traversal (Root, Left, Right)
+        arraylist = ArrayList(size=self.__size)
         if root:
-            print(root.value, end=" ")
+            arraylist.insert(root.value)
             self.preorder(root.left)
             self.preorder(root.right)
 
     def postorder(self, root:Node):
         # Postorder traversal (Left, Right, Root)
+        arraylist = ArrayList(size=self.__size)
         if root:
             self.postorder(root.left)
             self.postorder(root.right)
-            print(root.value, end=" ")
+            arraylist.insert(root.value)
+        return arraylist

@@ -22,18 +22,31 @@ class Duration:
             minute -= 60
         temp = self.__minute + minute
 
-        if temp > 60:
+        if temp >= 60:
+            self.__minute = 0
             self.addMinute(temp)
         else:
             self.__minute = temp
 
-    def addSecond(self, sec:int):
-        if sec >= 60:
-            self.addMinute(1)
-            sec -= 60
-        temp = self.__second + sec
+    # def addSecond(self, sec:int):
+    #     if sec >= 60:
+    #         self.addMinute(1)
+    #         sec -= 60
+    #     temp = self.__second + sec
+    #     print(sec)
 
-        if temp > 60:
+    #     if temp >= 60:
+    #         self.addSecond(temp)
+    #     else:
+    #         self.__second = temp
+        
+    def addSecond(self, seconds:int):
+        while seconds >= 60:
+            self.addMinute(1)
+            seconds -= 60
+        temp = self.__second + seconds
+        if temp >= 60:
+            self.__second = 0
             self.addSecond(temp)
         else:
             self.__second = temp
@@ -44,7 +57,7 @@ class Duration:
         self.addSecond(seconds)
 
     def durationSeconds(self):
-        total_sec = (self.__hour*60)*60 + self.__minute*60 + self.__second
+        total_sec = ((self.__hour*60)*60) + (self.__minute*60) + self.__second
         return total_sec
 
     def __str__(self) -> str:
@@ -52,7 +65,7 @@ class Duration:
 
 
 class Track:
-    def __init__(self, title:str, artist:str,album:str, duration:int) -> None:
+    def __init__(self, title:str, artist:str,album:str, duration:Duration) -> None:
         self.__title = title
         self.__artist = artist
         self.__album = album
@@ -70,9 +83,16 @@ class Track:
     def getDuration(self):
         return self.__duration
     
-    
     def __str__(self) -> str:
         return self.__title
 
     def __repr__(self) -> str:
         return self.__title
+
+t1 = Duration(hour=0, minute=30, sec=20)
+t2 = Duration(minute=45, sec= 50)
+t3 = Duration(minute=3, sec= 45)
+t1.addDuration(t2)
+# t1.addDuration(t3)
+# # t1.addMinute(t3.getMinute())
+print(t1)

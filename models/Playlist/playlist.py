@@ -1,9 +1,9 @@
-from AVLTree import AVLTree
+from avltree import AVLTree
 from datetime import datetime
 from track import Track, Duration
 from Queue import Queue
+from arraylist import ArrayList
 import json
-import math
 
 __database_path = 'D:\\Central Mindanao University\\2nd Year\\Data Structure and Algorithms\\Projects\\Project 1\\database\\musicdb.json'
 
@@ -13,7 +13,7 @@ class Playlist(AVLTree):
         self.__title = title
         self.__dateCreated = datetime.today()
         self.__totalDuration = Duration(hour=0, minute=0, sec=0)
-        self.__queue = Queue()
+        self.__queue = None
 
     def getTitle(self):
         return self.__title
@@ -24,21 +24,19 @@ class Playlist(AVLTree):
     def getDuration(self):
         return self.__totalDuration
     
-    def shuffle(self):
-        pass
+    def getQueue(self):
+        return self.__queue
 
-    def setOnRepeat(self, state:bool):
-        return state
+    def play(self):
+        self.__createQueue()
     
     def __addDuration(self, duration:Duration):
-        assert type(duration) is Duration, "Ivalid argument duration must be a Duration object."
+        assert type(duration) is Duration, "Invalid argument. duration must be a Duration object."
         self.__totalDuration.addDuration(duration)
     
     def __createQueue(self):
-        array = self.inorder()
-        pagination = self.getSize()/10
-        self.__queue.setPagination(int(pagination))
-        self.__queue.setEndIndex(11)
+        array = self.inorder().getArrayList()
+        self.__queue = Queue(array)
 
 def loadDB(path:str = __database_path):
     pl = Playlist("Music Library")
