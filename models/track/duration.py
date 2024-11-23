@@ -27,21 +27,9 @@ class Duration:
             self.addMinute(temp)
         else:
             self.__minute = temp
-
-    # def addSecond(self, sec:int):
-    #     if sec >= 60:
-    #         self.addMinute(1)
-    #         sec -= 60
-    #     temp = self.__second + sec
-    #     print(sec)
-
-    #     if temp >= 60:
-    #         self.addSecond(temp)
-    #     else:
-    #         self.__second = temp
         
     def addSecond(self, seconds:int):
-        while seconds >= 60:
+        if seconds >= 60:
             self.addMinute(1)
             seconds -= 60
         temp = self.__second + seconds
@@ -61,38 +49,4 @@ class Duration:
         return total_sec
 
     def __str__(self) -> str:
-        return "{}:{}:{}".format(self.__hour, self.__minute, self.__second)
-
-
-class Track:
-    def __init__(self, title:str, artist:str,album:str, duration:Duration) -> None:
-        self.__title = title
-        self.__artist = artist
-        self.__album = album
-        self.__duration:Duration = duration
-    
-    def getTitle(self):
-        return self.__title
-    
-    def getArtist(self):
-        return self.__artist
-    
-    def getAlbum(self):
-        return self.__album
-    
-    def getDuration(self):
-        return self.__duration
-    
-    def __str__(self) -> str:
-        return self.__title
-
-    def __repr__(self) -> str:
-        return self.__title
-
-t1 = Duration(hour=0, minute=30, sec=20)
-t2 = Duration(minute=45, sec= 50)
-t3 = Duration(minute=3, sec= 45)
-t1.addDuration(t2)
-# t1.addDuration(t3)
-# # t1.addMinute(t3.getMinute())
-print(t1)
+        return "{:02}:{:02}".format(self.__minute, self.__second)

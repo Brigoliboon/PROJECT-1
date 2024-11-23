@@ -1,5 +1,5 @@
 from datetime import datetime
-from models.Playlist.track import Track
+from models.track.track import Track
 import json
 
 class Node:

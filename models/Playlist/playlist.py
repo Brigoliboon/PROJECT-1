@@ -1,13 +1,14 @@
-from avltree import AVLTree
+from models.avltree.avltree import AVLTree
 from datetime import datetime
-from track import Track, Duration
-from Queue import Queue
-from arraylist import ArrayList
+from models.track.track import Track, Duration
+from models.Queue.Queue import Queue
+from models.Queue.arraylist import ArrayList
+from models.avltree.trackavltree import TrackAVLTree
 import json
 
 __database_path = 'D:\\Central Mindanao University\\2nd Year\\Data Structure and Algorithms\\Projects\\Project 1\\database\\musicdb.json'
 
-class Playlist(AVLTree):
+class Playlist(TrackAVLTree):
     def __init__(self, title:str):
         super().__init__()
         self.__title = title
@@ -34,8 +35,10 @@ class Playlist(AVLTree):
         assert type(duration) is Duration, "Invalid argument. duration must be a Duration object."
         self.__totalDuration.addDuration(duration)
     
+    def compare(self, t1: Track, t2: Track, by: str = "title"):
+        pass
     def __createQueue(self):
-        array = self.inorder().getArrayList()
+        array = self.inorder()
         self.__queue = Queue(array)
 
 def loadDB(path:str = __database_path):
@@ -49,3 +52,5 @@ def loadDB(path:str = __database_path):
         pl.insert(m)
 
     return pl
+
+p = Playlist("Sample")

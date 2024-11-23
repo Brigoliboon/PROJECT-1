@@ -1,63 +1,78 @@
-from arraylist import ArrayList
-from track import Track
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.left:Node = None
-        self.right:Node = None
-        self.height = 1
+import sys
+sys.path.append("models\\Queue\\")
+sys.path.append("models\\track\\")
+from Queue import ArrayList
+from track import Track, Duration
+from abc import ABC, abstractmethod
+from node import Node
 
-class AVLTree:
+class AVLTree(ABC):
     def __init__(self):
         self.root = None
         self.__size = 0
+        self.__reservedMemory = ArrayList()
 
     def getRoot(self):
         return self.root
     
     def getSize(self):
         return self.__size
-
+    
+    def __incrSize(self):
+        self.__size += 1
+    
     def height(self, node:Node):
         if not node:
             return 0
         return node.height
 
-    def balance(self, node:Node):
+    def __balance(self, node:Node):
         if not node:
             return 0
         return self.height(node.left) - self.height(node.right)
-
-    def __insert(self, root:Node, value):
+    
+    def insert(self, value):
+        self.root = self.__insert(self.root, value)
+        self.__incrSize()
+    
+    @abstractmethod
+    def __insert(self, root:Node, value:Track):
         if not root:
             return Node(value)
+
         elif value < root.value:
             root.left = self.__insert(root.left, value)
-        else:
+            
+        elif value > root.value:
             root.right = self.__insert(root.right, value)
 
-        root.height = 1 + max(self.height(root.left), self.height(root.right))
-        balance = self.balance(root)
+        elif value == root.value:
+            return (root, 'equal')
+        
+        self.__check_balance(root, value)
+        return root
 
+    def __check_balance(self, root:Node, value):
+        
+        root.height = 1 + max(self.height(root.left), self.height(root.right))
+        balance = self.__balance(root)
         # Left rotation
         if balance > 1 and value < root.left.value:
-            return self.right_rotate(root)
+            return self.__right_rotate(root)
 
         # Right rotation
         if balance < -1 and value > root.right.value:
-            return self.left_rotate(root)
+            return self.__left_rotate(root)
 
         # Left-Right rotation
         if balance > 1 and value > root.left.value:
-            root.left = self.left_rotate(root.left)
-            return self.right_rotate(root)
+            root.left = self.__left_rotate(root.left)
+            return self.__right_rotate(root)
 
         # Right-Left rotation
         if balance < -1 and value < root.right.value:
-            root.right = self.right_rotate(root.right)
-            return self.left_rotate(root)
-
-        return root
+            root.right = self.__right_rotate(root.right)
+            return self.__left_rotate(root)
 
     def delete(self, root:Node, value):
         if not root:
@@ -77,7 +92,7 @@ class AVLTree:
                 root = None
                 return temp
 
-            temp = self.min_value_node(root.right)
+            temp = self.__min_value_node(root.right)
             root.value = temp.value
             root.right = self.delete(root.right, temp.value)
 
@@ -85,29 +100,29 @@ class AVLTree:
             return root
 
         root.height = 1 + max(self.height(root.left), self.height(root.right))
-        balance = self.balance(root)
+        balance = self.__balance(root)
 
         # Left rotation
-        if balance > 1 and self.balance(root.left) >= 0:
-            return self.right_rotate(root)
+        if balance > 1 and self.__balance(root.left) >= 0:
+            return self.__right_rotate(root)
 
         # Right rotation
-        if balance < -1 and self.balance(root.right) <= 0:
-            return self.left_rotate(root)
+        if balance < -1 and self.__balance(root.right) <= 0:
+            return self.__left_rotate(root)
 
         # Left-Right rotation
-        if balance > 1 and self.balance(root.left) < 0:
-            root.left = self.left_rotate(root.left)
-            return self.right_rotate(root)
+        if balance > 1 and self.__balance(root.left) < 0:
+            root.left = self.__left_rotate(root.left)
+            return self.__right_rotate(root)
 
         # Right-Left rotation
-        if balance < -1 and self.balance(root.right) > 0:
-            root.right = self.right_rotate(root.right)
-            return self.left_rotate(root)
+        if balance < -1 and self.__balance(root.right) > 0:
+            root.right = self.__right_rotate(root.right)
+            return self.__left_rotate(root)
 
         return root
 
-    def left_rotate(self, z:Node):
+    def __left_rotate(self, z:Node):
         y = z.right
         T2 = y.left
 
@@ -119,7 +134,7 @@ class AVLTree:
 
         return y
 
-    def right_rotate(self, z:Node):
+    def __right_rotate(self, z:Node):
         y = z.left
         T3 = y.right
 
@@ -131,7 +146,7 @@ class AVLTree:
 
         return y
 
-    def min_value_node(self, root:Node):
+    def __min_value_node(self, root:Node):
         current = root
         while current.left:
             current = current.left
@@ -143,11 +158,7 @@ class AVLTree:
         if root.value < value:
             return self.__search(root.right, value)
         return self.__search(root.left, value)
-
-    def insert(self, value):
-        self.root = self.__insert(self.root, value)
-        self.__size +=1
-
+        
     def delete_value(self, value):
         self.root = self.delete(self.root, value)
 
@@ -156,13 +167,11 @@ class AVLTree:
     
     def inorder(self, root:Node)-> ArrayList:
         # Inorder traversal (Left, Root, Right)
-        arraylist = ArrayList(size=self.__size)
         if root:
             self.inorder(root.left)
-            arraylist.insert(root.value)
+            self.__reservedMemory.insert(root.value)
             self.inorder(root.right)
-        
-        return arraylist
+        return self.__reservedMemory
     def preorder(self, root:Node):
         # Preorder traversal (Root, Left, Right)
         arraylist = ArrayList(size=self.__size)
@@ -179,3 +188,14 @@ class AVLTree:
             self.postorder(root.right)
             arraylist.insert(root.value)
         return arraylist
+
+avl = AVLTree()
+# s1 = 2
+# s2 = 1
+# avl.insert(s1)
+# avl.insert(s2)
+# # # t1 = Track("Blinding Lights", "The Weeknd", "After Hours", Duration(0, 20, 30))
+# # # t2 = Track("Watermelon Sugar", "Harry Styles", "Fine Line", Duration(0, 20, 2))
+# # avl.insert(t1)
+# # avl.insert(t2)
+# print(avl.inorder(avl.root))

@@ -1,3 +1,6 @@
+import sys
+
+sys.path.append("models\\track\\")
 import random
 from track import Track, Duration
 
@@ -139,9 +142,9 @@ Next:
 {str(self.pagination)}"""
 
 
-l = [1]
-q = Queue(l)
-print(q.currentPage())
+# l = [1]
+# q = Queue(l)
+# print(q)
 # p = Pagination(len(l), 10)
 # p.next()
 # p.next()

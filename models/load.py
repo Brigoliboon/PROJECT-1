@@ -1,7 +1,7 @@
 import json
 from Playlist import Playlist
 import time
-from .Playlist.track import Track
+from .track.track import Track
 
 path = 'D:\\Central Mindanao University\\2nd Year\\Data Structure and Algorithms\\Projects\\Project 1\\database\\musicdb.json'
 

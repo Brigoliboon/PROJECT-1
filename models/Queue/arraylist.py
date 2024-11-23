@@ -1,4 +1,4 @@
-from track import Track
+from models.track.track import Track
 
 class ArrayList:
     def __init__(self, size = 50) -> None:
@@ -27,7 +27,7 @@ class ArrayList:
     def __increaseSize(self):
         self.__size += 1
     
-    def __increaseCapacity(self, value:int = 1):
+    def __increaseCapacity(self, value:int = 10):
         self.__arraylist += [None]*value
     
     def __str__(self) -> str:
