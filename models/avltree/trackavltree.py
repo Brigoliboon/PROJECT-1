@@ -1,13 +1,15 @@
-import os
-from models.track.track import Track, Duration
-from avltree import AVLTree, Node
-from models.Queue.Queue import Pagination
+import sys
+sys.path.append("models\\track\\")
+sys.path.append("models\\")
+from track import *
+from avltree import AVLTree
+import Queue
 from abc import ABC, abstractmethod
 from node import Node
 class TrackAVLTree(AVLTree, ABC):
     def __init__(self):
         super().__init__()
-        self.pagination = Pagination(self.getSize())
+        self.pagination = Queue.Pagination(self.getSize())
     
     def insert(self, track:Track):
         self.root = self.__insert(self.root, track)

@@ -1,4 +1,7 @@
-from models.track.track import Track
+import sys
+sys.path.append('models\\track\\')
+
+from track import Track
 
 class ArrayList:
     def __init__(self, size = 50) -> None:

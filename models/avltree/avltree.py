@@ -1,8 +1,7 @@
 import sys
-sys.path.append("models\\Queue\\")
-sys.path.append("models\\track\\")
-from Queue import ArrayList
-from track import Track, Duration
+sys.path.append("models\\")
+sys.path.append("models\\Queue")
+import Queue
 from abc import ABC, abstractmethod
 from node import Node
 
@@ -10,7 +9,7 @@ class AVLTree(ABC):
     def __init__(self):
         self.root = None
         self.__size = 0
-        self.__reservedMemory = ArrayList()
+        self.__reservedMemory = Queue.ArrayList()
 
     def getRoot(self):
         return self.root
@@ -36,7 +35,7 @@ class AVLTree(ABC):
         self.__incrSize()
     
     @abstractmethod
-    def __insert(self, root:Node, value:Track):
+    def __insert(self, root:Node, value):
         if not root:
             return Node(value)
 
@@ -165,7 +164,7 @@ class AVLTree(ABC):
     def search(self, value):
         return self.__search(self.root, value)
     
-    def inorder(self, root:Node)-> ArrayList:
+    def inorder(self, root:Node):
         # Inorder traversal (Left, Root, Right)
         if root:
             self.inorder(root.left)
@@ -189,7 +188,7 @@ class AVLTree(ABC):
             arraylist.insert(root.value)
         return arraylist
 
-avl = AVLTree()
+# avl = AVLTree()
 # s1 = 2
 # s2 = 1
 # avl.insert(s1)

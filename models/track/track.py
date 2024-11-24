@@ -24,10 +24,10 @@ class Track:
     def __repr__(self) -> str:
         return self.__title
 
-t1 = Duration(hour=0, minute=30, sec=20)
-t2 = Duration(minute=45, sec= 50)
-t3 = Duration(minute=3, sec= 45)
-t1.addDuration(t2)
-t1.addDuration(t3)
-# # # t1.addMinute(t3.getMinute())
-print(t1)
+# t1 = Duration(hour=0, minute=30, sec=20)
+# t2 = Duration(minute=45, sec= 50)
+# t3 = Duration(minute=3, sec= 45)
+# t1.addDuration(t2)
+# t1.addDuration(t3)
+# # # # t1.addMinute(t3.getMinute())
+# print(t1)

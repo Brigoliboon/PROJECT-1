@@ -1,8 +1,8 @@
-from models.track.track import Track, Duration
-from models.avltree.avltree import Node
-from models.avltree.trackavltree import TrackAVLTree
-from models.Queue.Queue import Pagination
-
+import sys
+sys.path.append("models\\track\\")
+sys.path.append("models\\")
+from Queue import Pagination
+from avltree import TrackAVLTree
 class MusicLibrary(TrackAVLTree):
     def __init__(self):
         super().__init__()

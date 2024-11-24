@@ -1,2 +1,4 @@
-from arraylist import ArrayList
-from Queue import Queue
+import sys
+from .arraylist import ArrayList
+from .Queue import Queue
+from .pagination import Pagination
