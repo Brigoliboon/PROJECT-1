@@ -1,15 +1,15 @@
 import sys
 sys.path.append("models\\")
 sys.path.append("models\\Queue")
-import Queue
 from abc import ABC, abstractmethod
-from node import Node
+from Queue import ArrayList
+from .node import Node
 
 class AVLTree(ABC):
     def __init__(self):
         self.root = None
         self.__size = 0
-        self.__reservedMemory = Queue.ArrayList()
+        self.__reservedMemory = ArrayList()
 
     def getRoot(self):
         return self.root
@@ -17,7 +17,7 @@ class AVLTree(ABC):
     def getSize(self):
         return self.__size
     
-    def __incrSize(self):
+    def incrSize(self):
         self.__size += 1
     
     def height(self, node:Node):
@@ -33,8 +33,7 @@ class AVLTree(ABC):
     def insert(self, value):
         self.root = self.__insert(self.root, value)
         self.__incrSize()
-    
-    @abstractmethod
+
     def __insert(self, root:Node, value):
         if not root:
             return Node(value)

@@ -1,11 +1,10 @@
-from models.avltree.avltree import AVLTree
+import sys
+sys.path.append("models\\")
+sys.path.append("models\\Queue\\")
 from datetime import datetime
-from models.track.track import Track, Duration
-from models.Queue.Queue import Queue
-from models.Queue.arraylist import ArrayList
-from models.avltree.trackavltree import TrackAVLTree
-import json
-
+from Queue import Queue
+from avltree import TrackAVLTree
+from track import *
 __database_path = 'D:\\Central Mindanao University\\2nd Year\\Data Structure and Algorithms\\Projects\\Project 1\\database\\musicdb.json'
 
 class Playlist(TrackAVLTree):
