@@ -8,16 +8,57 @@ from abc import ABC, abstractmethod
 from .node import Node
 
 class TrackAVLTree(AVLTree, ABC):
+    """
+    A TrackAVLTree is an extension of the AVLTree that manages a collection of Track objects.
+    It provides functionality for inserting tracks, creating a playback queue, 
+    and paginating through the tracks.
+    """
     def __init__(self):
+        """
+        Initializes a new instance of TrackAVLTree.
+        Sets up the AVL Tree structure and initializes pagination and queue.
+        """
         super().__init__()
         self.pagination = Pagination(self.getSize())
+        self.__queue = None
     
+    def getQueue(self):
+        """
+        Retrieves the current playback queue.
+
+        Returns:
+            Queue: The queue containing the tracks.
+        """
+        return self.__queue
+
+    def play(self):
+        """
+        Prepares the playback queue by creating it from the current set of tracks.
+        """
+        self.createQueue()
+
     def insert(self, track:Track):
+        """
+        Inserts a new track into the AVL Tree and updates the pagination size.
+
+        Args:
+            track (Track): The Track object to be inserted into the tree.
+        """
         self.root = self.__insert(self.root, track)
         self.incrSize()
         self.pagination.setArraySize(self.getSize())
 
     def __insert(self, root:Node, track:Track):
+        """
+        Helper method to insert a track into the AVL Tree recursively.
+
+        Args:
+            root (Node): The root node of the subtree.
+            track (Track): The Track object to be inserted.
+
+        Returns:
+            Node: The updated root node of the subtree.
+        """
         if not root:
             return Node(track)
         result = self.compare(root.value, track)
@@ -29,12 +70,41 @@ class TrackAVLTree(AVLTree, ABC):
                 root.right = self.__insert(root.right, track)
         return root
     
+    def createQueue(self):
+        """
+        Creates a playback queue by performing an inorder traversal of the AVL Tree
+        and populating the queue with the tracks.
+        """
+        array = self.inorder(self.root).getArrayList()
+        self.__queue = Queue(array)
+
     @abstractmethod
     def compare(self, t1:Track, t2:Track, by:str="title"):
+        """
+        Abstract method for comparing two Track objects.
+
+        Args:
+            t1 (Track): The first Track object to compare.
+            t2 (Track): The second Track object to compare.
+            by (str): The attribute to compare by (default is "title").
+
+        Returns:
+            int: A comparison result; 1 if t1 > t2, -1 if t1 < t2, 0 if equal.
+        """
         pass
 
     @staticmethod
     def _compareValues(value1, value2):
+        """
+        Compares two values and returns the comparison result.
+
+        Args:
+            value1: The first value to compare.
+            value2: The second value to compare.
+
+        Returns:
+            int: 1 if value1 > value2, -1 if value1 < value2, 0 if equal.
+        """
         if value1 > value2:
             return 1
         elif value1 < value2:
@@ -43,10 +113,25 @@ class TrackAVLTree(AVLTree, ABC):
             return 0
     
     def currentPage(self)-> list[Track]:
+        """
+        Retrieves the current page of tracks based on pagination settings.
+
+        Returns:
+            list[Track]: A list of Track objects on the current page.
+        """
         current =  self.inorder(self.root).getArrayList()
         return current[self.pagination.getStartIndex(): self.pagination.getEndIndex()]
 
     def loadPage(self, counter:bool = False):
+        """
+        Loads the current page of tracks and formats them for display.
+
+        Args:
+            counter (bool): If True, includes a counter in the display format.
+
+        Returns:
+            str: A formatted string of the current page of tracks.
+        """
         s = ''
         count = 0
         for track in self.currentPage():
@@ -56,24 +141,3 @@ class TrackAVLTree(AVLTree, ABC):
             else:
                 s += f"{str(track)}\n"
         return s
-
-# t1 = Track('Blinding Lights', 'The Weeknd', 'After Hours', Duration(minute=3, sec=20))
-# t2 = Track('Watermelon Sugar', 'Harry Styles', 'Fine Line', Duration(minute=2, sec=6))
-# t3 = Track('Levitating', 'Dua Lipa', 'Future Nostalgia', Duration(minute=3, sec=23))
-# t4 = Track('Shape of You', 'Ed Sheeran', '÷ (Divide)', Duration(minute=4, sec=23))
-# t5 = Track('Good 4 U', 'Olivia Rodrigo', 'SOUR', Duration(minute=3, sec=14))
-# t6 = Track('Stay', 'The Kid LAROI & Justin Bieber', 'F*CK LOVE 3: OVER YOU', Duration(minute=2, sec=35))
-# t7 = Track('Peaches', 'Justin Bieber', 'Justice', Duration(minute=3, sec=17))
-# t8 = Track('Kiss Me More', 'Doja Cat feat. SZA', 'Planet Her', Duration(minute=3, sec=24))
-# t9 = Track('Save Your Tears', 'The Weeknd', 'After Hours', Duration(minute=3, sec=35))
-# t10 = Track('Montero (Call Me By Your Name)', 'Lil Nas X', 'Montero', Duration(minute=2, sec=17))
-# m.insert(t1)
-# m.insert(t2)
-# m.insert(t3)
-# m.insert(t4)
-# m.insert(t5)
-# m.insert(t6)
-# m.insert(t7)
-# m.insert(t8)
-# m.insert(t9)
-# print(m)

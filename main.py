@@ -1,14 +1,14 @@
 from models.interface import *
-from models import Track,Duration, Playlist, MusicLibrary
+from models import Track,Duration, Playlist, MusicLibrary, ArrayList
 from database import load
 import math
 import sys
 import os
 print(os.getcwd())
-Banner = '''
-==========================================
-     PROJECT 1 - Listen to the Music
-=========================================='''
+# Banner = '''
+# ==========================================
+#      PROJECT 1 - Listen to the Music
+# =========================================='''
 
 def displayBanner(title:str)-> None:
     side_space = ' '*5
@@ -26,17 +26,17 @@ t8 = Track('Kiss Me More', 'Doja Cat feat. SZA', 'Planet Her', Duration(minute=3
 t9 = Track('Save Your Tears', 'The Weeknd', 'After Hours', Duration(minute=3, sec=35))
 t10 = Track('Montero (Call Me By Your Name)', 'Lil Nas X', 'Montero', Duration(minute=2, sec=17))
 
-ml = MusicLibrary()
-ml.insert(t1)
-ml.insert(t2)
-ml.insert(t3)
-ml.insert(t4)
-ml.insert(t5)
-ml.insert(t6)
-ml.insert(t7)
-ml.insert(t8)
-ml.insert(t9)
-ml.insert(t10)
+# ml = MusicLibrary()
+# ml.insert(t1)
+# ml.insert(t2)
+# ml.insert(t3)
+# ml.insert(t4)
+# ml.insert(t5)
+# ml.insert(t6)
+# ml.insert(t7)
+# ml.insert(t8)
+# ml.insert(t9)
+# ml.insert(t10)
 
 if __name__ == "__main__":
     while True:
@@ -46,20 +46,24 @@ if __name__ == "__main__":
         print(choice)
         match choice:
             case 1: # [1] Enter Music Library
-                print(ml)
+                musiclib:MusicLibrary = load.database("MusicLibrary")
+                print(musiclib)
                 Menu("musiclibrary")
                 ml_choice = prompt("Select: ", type=int)
+
                 match ml_choice:
                     case 1: # [1] Search Track
                         pass
                     case 2: # [2] Select Track
-                        print(ml)
+                        print(musiclib)
                         selected = prompt("Select Music: ", type=int)
-                        track = ml.getTrackbyIndex(ml.currentPage(), index=selected-1)
+                        track = musiclib.getTrackbyIndex(musiclib.currentPage(), index=selected-1)
                         print(track.__str__(mode= 'full'))
                         Menu("track")
                     case 3: # [3] Play
-                        pass
+                        musiclib.play()
+                        print(musiclib.getQueue())
+                        
                     case 4: # [4] Create Track
                         pass
                     case 5: # [5] Next Page
@@ -67,12 +71,15 @@ if __name__ == "__main__":
                     case 6: # [6] Previous Page
                         pass
                     case 7: # [7] Exit
-                        pass
+                        continue
         
             case 2: # [2] View List of Playlists
                 displayBanner("List of Playlists")
+                playlistarray:ArrayList = load.database("PlaylistList")
+                print(playlistarray.__str__(format="paginate"))
                 Menu("playlist-external")
                 choice = prompt("Select: ", type=int)
+
             case 3: # [3] Create Playlist
                 pass
 
