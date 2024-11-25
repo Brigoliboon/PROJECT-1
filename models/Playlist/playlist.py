@@ -5,8 +5,6 @@ from datetime import datetime
 from Queue import Queue
 from avltree import TrackAVLTree
 from track import *
-__database_path = 'D:\\Central Mindanao University\\2nd Year\\Data Structure and Algorithms\\Projects\\Project 1\\database\\musicdb.json'
-
 class Playlist(TrackAVLTree):
     def __init__(self, title:str):
         super().__init__()
@@ -34,22 +32,28 @@ class Playlist(TrackAVLTree):
         assert type(duration) is Duration, "Invalid argument. duration must be a Duration object."
         self.__totalDuration.addDuration(duration)
     
-    def compare(self, t1: Track, t2: Track, by: str = "title"):
-        pass
+    def compare(self, t1:Track, t2:Track, by:str="title"):
+        match by:
+            case "title":
+                result = self._compareValues(t1.getTitle(), t2.getTitle())
+                if not result:
+                    return self.compare(t1, t2, by="artist")
+    
+            case "artist":
+                result = self.compare(t1.getArtist(), t2.getArtist())
+                if not result:
+                    return self.compare(t1, t2, "album")
+        
+            case "album":
+                result = self._compareValues(t1.getAlbum(), t2.getAlbum())
+                if not result:
+                    return self.compare(t1, t2, "track")
+        
+            case "track":
+                result = self._compareValues(str(t1.getDuration()), str(t2.getDuration()))
+                if not result:
+                    return "Duplicated track"
+                
     def __createQueue(self):
         array = self.inorder()
         self.__queue = Queue(array)
-
-def loadDB(path:str = __database_path):
-    pl = Playlist("Music Library")
-
-    with open(path, 'r') as f:
-        data = json.loads(f.read())
-
-    for music in data:
-        m = Track(music['title'], music['singer'], music['year'], music['description'], Track.Tags(music['tags']))
-        pl.insert(m)
-
-    return pl
-
-p = Playlist("Sample")

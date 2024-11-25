@@ -1,1 +1,4 @@
-
+type, size, byte, last_modified
+MusicLibrary,0 ,'nice one', 1223454
+PlaylistList,0 , database\\data\\playlists.csv, 11111
+AlbumList,0 , '', 1111

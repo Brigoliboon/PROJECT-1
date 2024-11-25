@@ -46,11 +46,15 @@ class TrackAVLTree(AVLTree, ABC):
         current =  self.inorder(self.root).getArrayList()
         return current[self.pagination.getStartIndex(): self.pagination.getEndIndex()]
 
-    def loadPage(self):
+    def loadPage(self, counter:bool = False):
         s = ''
+        count = 0
         for track in self.currentPage():
-            s += f"{str(track)}\n"
-        
+            if counter:
+                count += 1
+                s += f"[{count}] {str(track)}\n"
+            else:
+                s += f"{str(track)}\n"
         return s
 
 # t1 = Track('Blinding Lights', 'The Weeknd', 'After Hours', Duration(minute=3, sec=20))

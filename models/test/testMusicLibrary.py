@@ -1,5 +1,5 @@
 from ..models.avltree.trackavltree import MusicLibrary
-from ..models.Playlist.initializedTracks import listofTracks
+from ..models.track.initializedTracks import listofTracks
 m = MusicLibrary()
 for track in listofTracks:
     m.insert(track)

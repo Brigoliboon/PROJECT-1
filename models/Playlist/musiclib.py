@@ -29,19 +29,25 @@ class MusicLibrary(TrackAVLTree):
                 result = self._compareValues(str(t1.getDuration()), str(t2.getDuration()))
                 if not result:
                     return "Duplicated track"
-
         return result
+    
+    @staticmethod
+    def getTrackbyIndex(arr:list[Track], index:int)-> Track:
+        assert index < len(arr) and index >= 0, "Index out of range"
+        return arr[index]
+    
     def currentPage(self)-> list[Track]:
         current =  self.inorder(self.root).getArrayList()
         return current[self.pagination.getStartIndex(): self.pagination.getEndIndex()]
 
     def __str__(self) -> str:
+
         return f"""
 ==================================
           MUSIC LIBRARY
 ==================================
 Tracks:
-{self.loadPage()}
+{self.loadPage(counter=True)}
 
 {self.pagination}
 """
