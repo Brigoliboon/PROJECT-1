@@ -9,6 +9,4 @@ t7 = Track('Peaches', 'Justin Bieber', 'Justice', Duration(minute=3, sec=17))
 t8 = Track('Kiss Me More', 'Doja Cat feat. SZA', 'Planet Her', Duration(minute=3, sec=24))
 t9 = Track('Save Your Tears', 'The Weeknd', 'After Hours', Duration(minute=3, sec=35))
 t10 = Track('Montero (Call Me By Your Name)', 'Lil Nas X', 'Montero', Duration(minute=2, sec=17))
-
-print(t1.__dict__)
 listofTracks = [t1, t2, t3, t4, t5, t6, t7, t8, t9,t10]

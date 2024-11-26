@@ -53,12 +53,9 @@ def prompt(string:str, type=str|int)->int|str:
     if initial == '':
         print(f"User input cannot be empty")
         return prompt(string, type)
-
-    if type is int:
-        try:
-            int(initial)
-        except ValueError as err:
-            print(f"Error: {err}")
-            return prompt(string, type)
-
-    return type(initial)
+    try:
+        initial = type(initial)
+    except ValueError as err:
+        print(f"Error: {err}")
+        return prompt(string, type)
+    return initial

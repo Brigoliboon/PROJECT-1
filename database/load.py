@@ -1,4 +1,3 @@
-import sys
 import json
 import base64
 import pickle
@@ -15,7 +14,7 @@ def fetchAPI()-> list|dict:
         arr = json.loads(raw)
     print(parsetoTrack(arr))
 
-def parsetoTrack(file:list):
+def parsetoTrack(file:list[dict]):
     tracks = []
     for track in file:
         print(track)
@@ -23,6 +22,8 @@ def parsetoTrack(file:list):
         tracks.append(temp)
     return tracks
 
+def raw(p):
+    pass
 def database(type:str):
     with open(__DB_path, 'r', newline='') as f:
         for row in csv.reader(f):

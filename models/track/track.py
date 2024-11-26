@@ -1,4 +1,5 @@
 from duration import Duration
+
 class Track:
     def __init__(self, title:str, artist:str,album:str, duration:Duration) -> None:
         self.__trackID = 0

@@ -1,4 +1,6 @@
 import sys
+
+from models.track import Track
 sys.path.append("models\\")
 sys.path.append("models\\Queue\\")
 from datetime import datetime
@@ -52,7 +54,9 @@ class Playlist(TrackAVLTree):
         """
         return self.__queue
 
-    
+    def insert(self, track: Track):
+        self.__addDuration(track.getDuration())
+        super().insert(track)
     def __addDuration(self, duration:Duration):
         """
         Adds the duration of a track to the total duration of the playlist.
@@ -87,3 +91,21 @@ class Playlist(TrackAVLTree):
                 result = self._compareValues(str(t1.getDuration()), str(t2.getDuration()))
                 if not result:
                     return "Duplicated track"
+    def __str__(self) -> str:
+        """
+        Returns a string representation of the MusicLibrary, including the tracks and pagination info.
+        
+        Returns:
+            str: A formatted string representing the music library.
+        """
+        return f"""
+==================================
+            Playlist
+==================================
+Playlist Name: {self.__title}
+Total Duration: {self.getDuration().getMinute()} min {self.getDuration().getSecond()} sec
+Tracks:
+{self.loadPage(counter=False)}
+
+{self.pagination}
+"""

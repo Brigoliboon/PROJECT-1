@@ -52,17 +52,13 @@ class ArrayList:
         """
         self.__arraylist = [None] * self.__capacity
 
-    def insert(self, value:Track):
+    def insert(self, value):
         """
         Inserts a Track object into the array list.
 
         Args:
             value (Track): The Track object to be inserted.
-
-        Raises:
-            AssertionError: If the value is not of type Track.
         """
-        assert type(value) is Track, 'Invalid given argument type'
         if self.__size == self.__capacity:
             self.__increaseCapacity(self.__capacity)
         self.__arraylist[self.__size] = value
