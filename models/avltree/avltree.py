@@ -92,20 +92,7 @@ class AVLTree(ABC):
         Returns:
             Node: The updated root node of the subtree.
         """
-        if not root:
-            return Node(value)
-
-        elif value < root.value:
-            root.left = self.__insert(root.left, value)
-            
-        elif value > root.value:
-            root.right = self.__insert(root.right, value)
-
-        elif value == root.value:
-            return (root, 'equal')
-        
-        self.__check_balance(root, value)
-        return root
+        pass
 
     def __check_balance(self, root:Node, value):
         """

@@ -39,6 +39,15 @@ class Queue:
         self.__currentTrack = 0
         self.__endPage = self.__setEndPage()
     
+    def isonRepeat(self):
+        return self.__onRepeat
+    
+    def isonPause(self):
+        return self.__onPause
+    
+    def isShuffled(self):
+        return self.__shuffle
+    
     def totalDuration(self):
         """
         Returns the total duration of all tracks in the queue.

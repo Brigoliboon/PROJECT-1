@@ -7,7 +7,6 @@ class MusicLibrary(TrackAVLTree):
     def __init__(self):
         """Initializes the MusicLibrary, setting up the AVL tree and pagination."""
         super().__init__()
-        self.pagination = Pagination(self.getSize())
     
     def compare(self, t1:Track, t2:Track, by:str="title"):
         match by:
@@ -17,7 +16,7 @@ class MusicLibrary(TrackAVLTree):
                     return self.compare(t1, t2, by="artist")
     
             case "artist":
-                result = self.compare(t1.getArtist(), t2.getArtist())
+                result = self._compareValues(t1.getArtist(), t2.getArtist())
                 if not result:
                     return self.compare(t1, t2, "album")
         

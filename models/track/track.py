@@ -1,15 +1,15 @@
-from duration import Duration
-
+from .duration import Duration
+from datetime import datetime
 class Track:
     def __init__(self, title:str, artist:str,album:str, duration:Duration) -> None:
-        self.__trackID = 0
+        self.__datetimeAdded = datetime.now()
         self.__title = title
         self.__artist = artist
         self.__album = album
         self.__duration:Duration = duration
-
-    def getTrackID(self):
-        return self.__trackID
+    
+    def getDateTime(self):
+        return self.__datetimeAdded
 
     def getTitle(self):
         return self.__title
@@ -28,6 +28,7 @@ class Track:
             return f"{self.__title} - {self.__artist} ({self.__duration})"
         elif mode == 'full':
             return f'''
+            
 Title: {self.__title}
 Artist: {self.__artist}
 Album: {self.__album}

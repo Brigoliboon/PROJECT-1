@@ -4,3 +4,6 @@ class Node:
         self.left:Node = None
         self.right:Node = None
         self.height = 1
+    
+    def __repr__(self) -> str:
+        return repr(self.value)

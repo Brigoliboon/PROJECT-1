@@ -1,12 +1,12 @@
 import sys
 sys.path.append('models\\track\\')
+sys.path.append('models\\')
 from track import Track
 from pagination import Pagination
-
 class ArrayList:
     """
     A class that implements a dynamic array list for storing Track objects.
-    It provides methods for inserting, retrieving, and managing a list of tracks.
+    It provides methods for inserting, retrieving, and managing a list of tracks, Playlist, Music Library.
     """
     def __init__(self, size = 50) -> None:
         """
@@ -15,10 +15,12 @@ class ArrayList:
         Args:
             size (int): The initial capacity of the array list. Default is 50.
         """
+        self.__type = type
         self.__size = 0
         self.__arraylist = [None] * size
         self.__capacity = size
         self.__pagination = Pagination(self.__size)
+
     def getSize(self):
         """
         Returns the current number of elements in the array list.
@@ -59,6 +61,7 @@ class ArrayList:
         Args:
             value (Track): The Track object to be inserted.
         """
+        # assert self.__type is type(value), f"Invalid value type. must be a {self.__type}"
         if self.__size == self.__capacity:
             self.__increaseCapacity(self.__capacity)
         self.__arraylist[self.__size] = value
@@ -72,6 +75,9 @@ class ArrayList:
             list[Track]: A list of Track objects for the current page.
         """
         return self.getArrayList()[self.__pagination.getStartIndex():self.__pagination.getEndIndex()]
+    
+    # def __comparePlaylist(p1:Playlist, p2:Playlist):
+    #     pass
     
     def __loadPage(self):
         """
@@ -106,7 +112,7 @@ class ArrayList:
         Returns a string representation of the array list in the specified format.
 
         Args:
-            format (str): The format of the string representation. Can be "array" or "paginate".
+            by (str): The format of the string representation. Can be "array" or "paginate".
 
         Returns:
             str: A string representation of the array list.
@@ -116,6 +122,6 @@ class ArrayList:
                 return str(self.getArrayList())
             case "paginate":
                 if not self.__size:
-                    return "List is Empty..."
+                    return f"List is Empty...\n{self.__pagination}"
                 else:
                     return self.__loadPage()

@@ -7,7 +7,7 @@ from Queue import *
 from abc import ABC, abstractmethod
 from .node import Node
 
-class TrackAVLTree(AVLTree, ABC):
+class TrackAVLTree(AVLTree):
     """
     A TrackAVLTree is an extension of the AVLTree that manages a collection of Track objects.
     It provides functionality for inserting tracks, creating a playback queue, 
@@ -35,7 +35,10 @@ class TrackAVLTree(AVLTree, ABC):
         """
         Prepares the playback queue by creating it from the current set of tracks.
         """
-        self.createQueue()
+        if not self.__queue:
+            self.createQueue()
+    def stop(self):
+        self.__queue = None
 
     def insert(self, track:Track):
         """
@@ -44,6 +47,7 @@ class TrackAVLTree(AVLTree, ABC):
         Args:
             track (Track): The Track object to be inserted into the tree.
         """
+        
         self.root = self.__insert(self.root, track)
         self.incrSize()
         self.pagination.setArraySize(self.getSize())

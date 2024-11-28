@@ -1,8 +1,7 @@
 import sys
-
-from models.track import Track
 sys.path.append("models\\")
 sys.path.append("models\\Queue\\")
+from track import Track
 from datetime import datetime
 from avltree import TrackAVLTree
 from track import *
@@ -54,9 +53,9 @@ class Playlist(TrackAVLTree):
         """
         return self.__queue
 
-    def insert(self, track: Track):
-        self.__addDuration(track.getDuration())
-        super().insert(track)
+    def insert(self, value:Track):
+        super().insert(value)
+        self.__addDuration(value.getDuration())
     def __addDuration(self, duration:Duration):
         """
         Adds the duration of a track to the total duration of the playlist.
@@ -69,16 +68,53 @@ class Playlist(TrackAVLTree):
         """
         assert type(duration) is Duration, "Invalid argument. duration must be a Duration object."
         self.__totalDuration.addDuration(duration)
-    
-    def compare(self, t1:Track, t2:Track, by:str="title"):
+
+    def merge_sort(self, by="datetime"):
+        arr = self.inorder(self.root).getArrayList()
+        if len(arr) > 1:
+            mid = len(arr) // 2  # Find the middle of the array
+            left_half = arr[:mid]  # Divide the array elements into 2 halves
+            right_half = arr[mid:]
+
+            self.merge_sort(left_half, by)  # Sort the first half
+            self.merge_sort(right_half, by)  # Sort the second half
+
+            i = j = k = 0
+
+            # Copy data to temp arrays L[] and R[]
+            while i < len(left_half) and j < len(right_half):
+                if self.compare(left_half[i], right_half[j], by) < 0:  # Use compare method
+                    arr[k] = left_half[i]
+                    i += 1
+                else:
+                    arr[k] = right_half[j]
+                    j += 1
+                k += 1
+
+            # Checking if any element was left
+            while i < len(left_half):
+                arr[k] = left_half[i]
+                i += 1
+                k += 1
+
+            while j < len(right_half):
+                arr[k] = right_half[j]
+                j += 1
+                k += 1
+
+    def compare(self, t1:Track, t2:Track, by:str="datetime"):
         match by:
+            case "datetime":
+                result = self._compareValues(t1.getDateTime(), t2.getDateTime())
+                if not result:
+                    return self.compare(t1, t2, by="artist")
             case "title":
                 result = self._compareValues(t1.getTitle(), t2.getTitle())
                 if not result:
                     return self.compare(t1, t2, by="artist")
     
             case "artist":
-                result = self.compare(t1.getArtist(), t2.getArtist())
+                result = self._compareValues(t1.getArtist(), t2.getArtist())
                 if not result:
                     return self.compare(t1, t2, "album")
         
@@ -86,11 +122,16 @@ class Playlist(TrackAVLTree):
                 result = self._compareValues(t1.getAlbum(), t2.getAlbum())
                 if not result:
                     return self.compare(t1, t2, "track")
-        
-            case "track":
+    
+            case "duration":
                 result = self._compareValues(str(t1.getDuration()), str(t2.getDuration()))
-                if not result:
-                    return "Duplicated track"
+    
+        return result
+
+    @classmethod
+    def createplaylist(cls, title:str):
+        return cls(title)
+
     def __str__(self) -> str:
         """
         Returns a string representation of the MusicLibrary, including the tracks and pagination info.

@@ -3,7 +3,7 @@ import base64
 import pickle
 import csv
 from models import *
-__DB_path = "database\\database.csv"
+from . import __DB_path__
 
 def musiclib()-> MusicLibrary:
     pass
@@ -12,7 +12,7 @@ def fetchAPI()-> list|dict:
     with open("database\\APIres_sample.json") as f:
         raw = f.read()
         arr = json.loads(raw)
-    print(parsetoTrack(arr))
+    return parsetoTrack(arr)
 
 def parsetoTrack(file:list[dict]):
     tracks = []
@@ -22,14 +22,16 @@ def parsetoTrack(file:list[dict]):
         tracks.append(temp)
     return tracks
 
-def raw(p):
-    pass
-def database(type:str):
-    with open(__DB_path, 'r', newline='') as f:
-        for row in csv.reader(f):
-            if type == row[0]:
-                byte = __getb64(row)
-                return loadbytes(byte)
+def database(type:str='', filter:bool=False):
+    with open(__DB_path__, 'r', newline='') as f:
+        db = csv.reader(f)
+        for row in db:
+            if filter:
+                if type == row[0]:
+                    byte = __getb64(row)
+                    return loadbytes(byte)
+            else:
+                return list(db)
         return "type not found in database"
 
 def __getb64(l:list)-> bytes:
