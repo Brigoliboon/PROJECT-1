@@ -22,6 +22,7 @@ class TrackAVLTree(AVLTree):
         self.pagination = Pagination(self.getSize())
         self.__queue = None
     
+
     def getQueue(self):
         """
         Retrieves the current playback queue.
@@ -29,6 +30,8 @@ class TrackAVLTree(AVLTree):
         Returns:
             Queue: The queue containing the tracks.
         """
+        if not self.__queue:
+            self.play()
         return self.__queue
 
     def play(self):
@@ -79,7 +82,7 @@ class TrackAVLTree(AVLTree):
         Creates a playback queue by performing an inorder traversal of the AVL Tree
         and populating the queue with the tracks.
         """
-        array = self.inorder(self.root).getArrayList()
+        array = self.inorder(self.root)
         self.__queue = Queue(array)
 
     @abstractmethod
@@ -140,7 +143,7 @@ class TrackAVLTree(AVLTree):
         count = 0
         for track in self.currentPage():
             if counter:
-                count += 1
+                count +=1
                 s += f"[{count}] {str(track)}\n"
             else:
                 s += f"{str(track)}\n"

@@ -4,6 +4,7 @@ sys.path.append("models\\track\\")
 import random
 from track import Track, Duration
 from pagination import Pagination
+from arraylist import ArrayList
 class Queue:
     """
     A class to represent a queue for managing a collection of tracks.
@@ -20,7 +21,7 @@ class Queue:
         __currentTrack (int): The index of the currently playing track.
         __endPage (int): The index for the end of the current page in pagination.
     """
-    def __init__(self, array:list, itemCount:int = 10):
+    def __init__(self, arraylist:ArrayList, itemCount:int = 10):
         """
         Initializes the Queue object with a list of tracks and item count.
 
@@ -29,8 +30,8 @@ class Queue:
             itemCount (int, optional): The number of items to display per page. Defaults to 10.
         """
         self.__totalDuration = Duration(3, 20, 10)
-        self.__array = array
-        self.__size = len(self.__array)
+        self.__array = arraylist.getArrayList()
+        self.__size = arraylist.getSize()
         self.__itemCount = itemCount
         self.pagination = Pagination(self.__size, self.__itemCount)
         self.__shuffle = False
@@ -64,8 +65,11 @@ class Queue:
         Returns:
             Track: The track currently being played.
         """
-        return self.getTrackbyIndex(self.__currentTrack)
-    
+        try:
+            return self.getTrackbyIndex(self.__currentTrack)
+        except IndexError:
+            return None
+        
     def isEmpty(self):
         """
         Checks if the queue is empty.
@@ -114,7 +118,7 @@ class Queue:
         """
         Advances to the next track in the queue.
         """
-        if self.__currentTrack < len(self.__array)-1:
+        if self.__currentTrack < self.__size:
             self.__currentTrack += 1
             self.__size -= 1
             self.__endPage += 1
@@ -122,7 +126,6 @@ class Queue:
         else:
             if self.__onRepeat:
                 self.__currentTrack = 0
-                self.__size  = len(self.__array)
                 self.__endPage = self.__setEndPage()
                 self.pagination.setArraySize(self.__size)
 
@@ -133,7 +136,6 @@ class Queue:
         if self.__currentTrack > 0:
             self.__currentTrack -= 1
             self.__endPage -= 1
-            self.__size += 1
             self.pagination.setArraySize(self.__size)
             # self.__totalDuration.addDuration(self.getCurrentTrack().getDuration())
 
@@ -163,7 +165,6 @@ class Queue:
         Raises:
             AssertionError: If the index is out of bounds.
         """
-        assert index >=0 and index < self.__size, "Index out of bounds."
         return self.__array[index]
     
     def __setEndPage(self):
@@ -184,7 +185,8 @@ class Queue:
         for music in self.currentPage():
             count += 1
             s += f"({count})\t{str(music)}\n"
-        return s
+        if s == '':
+            return "Empty Queue"
 
     def __str__(self) -> str:
         """
@@ -193,10 +195,12 @@ class Queue:
         Returns:
             str: A formatted string representing the queue.
         """
-        if self.isEmpty():
-            return "Empty Playlist"
-        else:
-            return f"""
+        banner = """
+==============================
+            QUEUE
+=============================="""
+
+        return banner+f"""
 Total Duration: {self.__totalDuration.getHour()} hr {self.__totalDuration.getMinute()} min
 Shuffled: {"Yes" if self.__shuffle else "No"}
 Repeat: {"Yes" if self.__onRepeat else "No"}

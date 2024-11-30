@@ -7,16 +7,7 @@ m = MusicLibrary()
 print(t2.__str__(mode="full"))
 for track in listofTracks:
     m.insert(track)
-q = Queue(m.inorder(m.root).getArrayList())
-q.next()
-q.next()
-q.next()
-q.next()
-q.next()
-q.next()
-q.next()
-q.next()
-q.next()
-for i  in range(10):
+q = Queue(m.inorder(m.root))
+for i  in range(1):
     q.next()
 print(q)

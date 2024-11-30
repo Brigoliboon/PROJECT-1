@@ -1,7 +1,7 @@
 from models import Track, Duration, MusicLibrary, Playlist
 from models.interface import *
-from database import load, write, __database__
-from database.write import *
+from database import database, load, __database__
+from database.database import *
 import math
 from models.track import initializedTracks
 # Banner = '''
@@ -18,7 +18,6 @@ def displayBanner(title:str)-> None:
 
 if __name__ == "__main__":
     while True:
-        print(__database__)
         displayBanner("PROJECT 1 - Listen to the Music")
         Menu("MAIN")
         choice = prompt("Select: ", type=int)
@@ -26,10 +25,11 @@ if __name__ == "__main__":
         match choice:
             case 1: # [1] Enter Music Library
                 musiclib:MusicLibrary = load.database("MusicLibrary", filter=True)
+                for t in initializedTracks.listofTracks:
+                    musiclib.insert(t)
                 print(musiclib)
                 Menu("musiclibrary")
                 ml_choice = prompt("Select: ", type=int)
-
                 match ml_choice:
                     case 1: # [1] Search Track
                         pass
@@ -40,7 +40,6 @@ if __name__ == "__main__":
                         print(track.__str__(mode= 'full'))
                         Menu("track")
                     case 3: # [3] Play
-                        musiclib.play()
                         queue = musiclib.getQueue()
                         print(queue)
                             #initializes Queue
@@ -76,11 +75,11 @@ if __name__ == "__main__":
                             print("Music Library was not loaded yet.")
 
                     case 5: # [5] Next Page
-                        print(musiclib)
                         musiclib.pagination.next()
-                    case 6: # [6] Previous Page
                         print(musiclib)
+                    case 6: # [6] Previous Page
                         musiclib.pagination.previous()
+                        print(musiclib)
                     case 7: # [7] Exit
                         MusiclibDB().save(musiclib)
             case 2: # [2] View List of Playlists
@@ -89,7 +88,7 @@ if __name__ == "__main__":
                 print(playlistarray.__str__(format="paginate"))
                 Menu("playlist-external")
                 choice = prompt("Select: ", type=int)
-
+                
             case 3: # [3] Create Playlist
                 pass
 

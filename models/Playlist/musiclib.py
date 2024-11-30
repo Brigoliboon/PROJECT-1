@@ -7,7 +7,8 @@ class MusicLibrary(TrackAVLTree):
     def __init__(self):
         """Initializes the MusicLibrary, setting up the AVL tree and pagination."""
         super().__init__()
-    
+
+
     def compare(self, t1:Track, t2:Track, by:str="title"):
         match by:
             case "title":
@@ -61,7 +62,7 @@ class MusicLibrary(TrackAVLTree):
           MUSIC LIBRARY
 ==================================
 Tracks:
-{self.loadPage(counter=True)}
+{super().loadPage(counter=True)}
 
 {self.pagination}
 """

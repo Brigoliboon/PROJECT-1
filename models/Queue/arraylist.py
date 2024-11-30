@@ -19,7 +19,7 @@ class ArrayList:
         self.__size = 0
         self.__arraylist = [None] * size
         self.__capacity = size
-        self.__pagination = Pagination(self.__size)
+        self.pagination = Pagination(self.__size)
 
     def getSize(self):
         """
@@ -38,7 +38,7 @@ class ArrayList:
             list[Track]: A list containing the Track objects.
         """
         return self.__arraylist[:self.__size]
-    
+
     def isEmpty(self) -> bool:
         """
         Checks if the array list is empty.
@@ -67,6 +67,9 @@ class ArrayList:
         self.__arraylist[self.__size] = value
         self.__increaseSize()
     
+    def getItemPage(self, index:int):
+        assert index >= 1 and index <= 10, "Index out of bounds."
+        self.getCurrentPage()[index]
     def getCurrentPage(self):
         """
         Retrieves the current page of Track objects based on pagination.
@@ -74,7 +77,7 @@ class ArrayList:
         Returns:
             list[Track]: A list of Track objects for the current page.
         """
-        return self.getArrayList()[self.__pagination.getStartIndex():self.__pagination.getEndIndex()]
+        return self.getArrayList()[self.pagination.getStartIndex():self.pagination.getEndIndex()]
     
     # def __comparePlaylist(p1:Playlist, p2:Playlist):
     #     pass
@@ -122,6 +125,6 @@ class ArrayList:
                 return str(self.getArrayList())
             case "paginate":
                 if not self.__size:
-                    return f"List is Empty...\n{self.__pagination}"
+                    return f"List is Empty...\n{self.pagination}"
                 else:
                     return self.__loadPage()

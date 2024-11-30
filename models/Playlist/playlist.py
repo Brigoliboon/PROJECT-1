@@ -103,11 +103,13 @@ class Playlist(TrackAVLTree):
                 k += 1
 
     def compare(self, t1:Track, t2:Track, by:str="datetime"):
+        temp = ""
         match by:
             case "datetime":
                 result = self._compareValues(t1.getDateTime(), t2.getDateTime())
                 if not result:
-                    return self.compare(t1, t2, by="artist")
+                    # return self.compare(t1, t2, by="title")
+                    temp = "title"
             case "title":
                 result = self._compareValues(t1.getTitle(), t2.getTitle())
                 if not result:
@@ -125,7 +127,9 @@ class Playlist(TrackAVLTree):
     
             case "duration":
                 result = self._compareValues(str(t1.getDuration()), str(t2.getDuration()))
-    
+
+        if temp != "":
+            return self.compare(t1,t2,temp)
         return result
 
     @classmethod
