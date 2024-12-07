@@ -2,7 +2,7 @@ import sys
 sys.path.append("models\\")
 sys.path.append("models\\Queue\\")
 from track import Track
-from datetime import datetime
+from datetime import datetime, timedelta
 from avltree import TrackAVLTree
 from track import *
 
@@ -15,7 +15,6 @@ class Playlist(TrackAVLTree):
         super().__init__()
         self.__title = title
         self.__dateCreated = datetime.today()
-        self.__totalDuration = Duration(hour=0, minute=0, sec=0)
 
     def getTitle(self):
         """
@@ -35,15 +34,6 @@ class Playlist(TrackAVLTree):
         """
         return self.__dateCreated
     
-    def getDuration(self):
-        """
-        Returns the total duration of all tracks in the playlist.
-
-        Returns:
-            Duration: The total duration of the playlist.
-        """
-        return self.__totalDuration
-    
     def getQueue(self):
         """
         Returns the queue associated with the playlist for managing track playback order.
@@ -56,7 +46,8 @@ class Playlist(TrackAVLTree):
     def insert(self, value:Track):
         super().insert(value)
         self.__addDuration(value.getDuration())
-    def __addDuration(self, duration:Duration):
+
+    def __addDuration(self, duration:timedelta):
         """
         Adds the duration of a track to the total duration of the playlist.
 
@@ -66,8 +57,8 @@ class Playlist(TrackAVLTree):
         Raises:
             AssertionError: If the provided duration is not a Duration object.
         """
-        assert type(duration) is Duration, "Invalid argument. duration must be a Duration object."
-        self.__totalDuration.addDuration(duration)
+        assert type(duration) is timedelta, "Invalid argument. duration must be a Duration object."
+        self.getDuration().__add__(duration)
 
     def merge_sort(self, by="datetime"):
         arr = self.inorder(self.root).getArrayList()
@@ -108,30 +99,32 @@ class Playlist(TrackAVLTree):
             case "datetime":
                 result = self._compareValues(t1.getDateTime(), t2.getDateTime())
                 if not result:
-                    # return self.compare(t1, t2, by="title")
                     temp = "title"
+
             case "title":
                 result = self._compareValues(t1.getTitle(), t2.getTitle())
                 if not result:
-                    return self.compare(t1, t2, by="artist")
+                    temp = "artist"
     
             case "artist":
                 result = self._compareValues(t1.getArtist(), t2.getArtist())
                 if not result:
-                    return self.compare(t1, t2, "album")
+                    temp = 'album'
         
             case "album":
                 result = self._compareValues(t1.getAlbum(), t2.getAlbum())
                 if not result:
-                    return self.compare(t1, t2, "track")
-    
+                    temp = 'duration'
+
             case "duration":
                 result = self._compareValues(str(t1.getDuration()), str(t2.getDuration()))
+                if not result:
+                    t1.incrOccurence()
 
         if temp != "":
-            return self.compare(t1,t2,temp)
+            return self.compare(t1,t2, temp)
         return result
-
+    
     @classmethod
     def createplaylist(cls, title:str):
         return cls(title)
@@ -148,7 +141,7 @@ class Playlist(TrackAVLTree):
             Playlist
 ==================================
 Playlist Name: {self.__title}
-Total Duration: {self.getDuration().getMinute()} min {self.getDuration().getSecond()} sec
+Total Duration: {Track.formatduration(self.getDuration(), 'display')}
 Tracks:
 {self.loadPage(counter=False)}
 

@@ -2,7 +2,7 @@ import sys
 sys.path.append("models\\")
 sys.path.append("models\\track\\")
 import random
-from track import Track, Duration
+from track import Track, timedelta
 from pagination import Pagination
 from arraylist import ArrayList
 class Queue:
@@ -29,7 +29,7 @@ class Queue:
             array (list): The list of tracks to be managed by the queue.
             itemCount (int, optional): The number of items to display per page. Defaults to 10.
         """
-        self.__totalDuration = Duration(3, 20, 10)
+        self.__totalDuration = timedelta(seconds=0)
         self.__array = arraylist.getArrayList()
         self.__size = arraylist.getSize()
         self.__itemCount = itemCount
@@ -185,8 +185,7 @@ class Queue:
         for music in self.currentPage():
             count += 1
             s += f"({count})\t{str(music)}\n"
-        if s == '':
-            return "Empty Queue"
+        return s
 
     def __str__(self) -> str:
         """
@@ -201,7 +200,7 @@ class Queue:
 =============================="""
 
         return banner+f"""
-Total Duration: {self.__totalDuration.getHour()} hr {self.__totalDuration.getMinute()} min
+Total Duration: {Track.formatduration(self.__totalDuration, 'display')}
 Shuffled: {"Yes" if self.__shuffle else "No"}
 Repeat: {"Yes" if self.__onRepeat else "No"}
 Tracks:

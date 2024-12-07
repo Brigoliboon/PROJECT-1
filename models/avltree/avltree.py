@@ -18,7 +18,10 @@ class AVLTree(ABC):
         self.root = None
         self.__size = 0
         self.__reservedMemory = ArrayList()
-
+    
+    def getreservedMemory(self):
+        return self.__reservedMemory
+    
     def getRoot(self):
         """
         Returns the root node of the AVL Tree.
@@ -266,6 +269,7 @@ class AVLTree(ABC):
         """
         return self.__search(self.root, value)
     
+    @abstractmethod
     def inorder(self, root:Node):
         """
         Performs an inorder traversal of the AVL Tree and stores the values

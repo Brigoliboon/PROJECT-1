@@ -2,7 +2,7 @@ import sys
 sys.path.append("models\\track\\")
 sys.path.append("models\\")
 from .avltree import AVLTree
-from track import *
+from track import Track, timedelta
 from Queue import *
 from abc import ABC, abstractmethod
 from .node import Node
@@ -21,7 +21,19 @@ class TrackAVLTree(AVLTree):
         super().__init__()
         self.pagination = Pagination(self.getSize())
         self.__queue = None
+        self.__totalDuration = timedelta(seconds=0)
+
+    def getDuration(self):
+        """
+        Returns the total duration of all tracks in the playlist.
+
+        Returns:
+            Duration: The total duration of the playlist.
+        """
+        return self.__totalDuration
     
+    def updateDuration(self):
+        pass
 
     def getQueue(self):
         """
@@ -40,6 +52,7 @@ class TrackAVLTree(AVLTree):
         """
         if not self.__queue:
             self.createQueue()
+    
     def stop(self):
         self.__queue = None
 
@@ -84,6 +97,18 @@ class TrackAVLTree(AVLTree):
         """
         array = self.inorder(self.root)
         self.__queue = Queue(array)
+    
+    def inorder(self, root: Node, duplicates = False):
+        if root:
+            self.inorder(root.left)
+
+            if root.value.occurence and duplicates:
+                for i in range(root.value.occurence()):
+                    self.getreservedMemory().insert(root.value)
+            else:
+                self.getreservedMemory().insert(root.value)
+            self.inorder(root.right)
+        return self.getreservedMemory()
 
     @abstractmethod
     def compare(self, t1:Track, t2:Track, by:str="title"):

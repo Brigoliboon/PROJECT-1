@@ -1,4 +1,4 @@
-from models import Playlist,MusicLibrary, Track, Duration, Queue
+from models import Playlist,MusicLibrary, Track, Queue
 from models.track.initializedTracks import *
 p = Playlist("nice")
 m = MusicLibrary()
@@ -6,8 +6,10 @@ m = MusicLibrary()
 
 print(t2.__str__(mode="full"))
 for track in listofTracks:
-    m.insert(track)
-q = Queue(m.inorder(m.root))
-for i  in range(1):
-    q.next()
+    p.insert(track)
+q = Queue(p.inorder(m.root))
+# for i  in range(1):
+#     q.next()
+print(p)
 print(q)
+    

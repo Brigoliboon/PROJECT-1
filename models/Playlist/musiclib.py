@@ -29,7 +29,8 @@ class MusicLibrary(TrackAVLTree):
             case "track":
                 result = self._compareValues(str(t1.getDuration()), str(t2.getDuration()))
                 if not result:
-                    return "Duplicated track"
+                    t1.incrOccurence() #todo: increment occurences
+
         return result
     
     @staticmethod

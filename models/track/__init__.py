@@ -1,2 +1,2 @@
-__all__ = ['Track', 'Duration']
-from .track import Track, Duration
+__all__ = ['Track', 'timedelta']
+from .track import Track, timedelta

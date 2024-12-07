@@ -15,11 +15,10 @@ class ArrayList:
         Args:
             size (int): The initial capacity of the array list. Default is 50.
         """
-        self.__type = type
         self.__size = 0
         self.__arraylist = [None] * size
         self.__capacity = size
-        self.pagination = Pagination(self.__size)
+        self.__pagination = Pagination(self.__size)
 
     def getSize(self):
         """
@@ -66,10 +65,11 @@ class ArrayList:
             self.__increaseCapacity(self.__capacity)
         self.__arraylist[self.__size] = value
         self.__increaseSize()
-    
+
     def getItemPage(self, index:int):
         assert index >= 1 and index <= 10, "Index out of bounds."
         self.getCurrentPage()[index]
+
     def getCurrentPage(self):
         """
         Retrieves the current page of Track objects based on pagination.
@@ -77,10 +77,7 @@ class ArrayList:
         Returns:
             list[Track]: A list of Track objects for the current page.
         """
-        return self.getArrayList()[self.pagination.getStartIndex():self.pagination.getEndIndex()]
-    
-    # def __comparePlaylist(p1:Playlist, p2:Playlist):
-    #     pass
+        return self.getArrayList()[self.__pagination.getStartIndex():self.__pagination.getEndIndex()]
     
     def __loadPage(self):
         """
@@ -100,7 +97,8 @@ class ArrayList:
         Increases the size of the array list by one.
         """
         self.__size += 1
-    
+        self.__pagination = Pagination(self.__size)
+
     def __increaseCapacity(self, value:int = 10):
         """
         Increases the capacity of the array list by adding more None values.
@@ -109,7 +107,7 @@ class ArrayList:
             value (int): The number of None values to add to increase capacity. Default is 10.
         """
         self.__arraylist += [None]*value
-    
+
     def __str__(self, format= "array") -> str:
         """
         Returns a string representation of the array list in the specified format.
@@ -125,6 +123,6 @@ class ArrayList:
                 return str(self.getArrayList())
             case "paginate":
                 if not self.__size:
-                    return f"List is Empty...\n{self.pagination}"
+                    return f"List is Empty...\n{self.__pagination}"
                 else:
                     return self.__loadPage()
